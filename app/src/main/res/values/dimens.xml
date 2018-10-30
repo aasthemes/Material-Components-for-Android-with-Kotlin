@@ -1,0 +1,45 @@
+<resources>
+    <dimen name="recycler_item_size">192dp</dimen>
+
+    <dimen name="img_width_height">200dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_large_title">22sp</dimen>
+    <dimen name="text_title">20sp</dimen>
+    <dimen name="text_large_body">18sp</dimen>
+    <dimen name="text_body">16sp</dimen>
+    <dimen name="text_small_body">14sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="actionBarSize">56dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="viewpager_margin_overlap">-60dp</dimen>
+    <dimen name="viewpager_margin_overlap_payment">-30dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+    <dimen name="fab_margin_right">26dp</dimen>
+    <dimen name="elevation_low">9dp</dimen>
+    <dimen name="elevation_high">12dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+
+    <!--genaral spacing-->
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>
