@@ -1,14 +1,14 @@
-package edu.stts.materialcomponents.activity
+package edu.stts.materialcomponents.activity.menu13
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import edu.stts.materialcomponents.R
 
-class Menu10Activity: AppCompatActivity() {
+class Menu13Activity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_10)
+        setContentView(R.layout.activity_menu_13)
         init()
     }
 

@@ -1,11 +1,10 @@
-package edu.stts.materialcomponents.activity
+package edu.stts.materialcomponents.activity.menu2
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import edu.stts.materialcomponents.R
-import edu.stts.materialcomponents.activity.menu2.BasicButtonActivity
 import kotlinx.android.synthetic.main.activity_menu_2.*
 
 class Menu2Activity: AppCompatActivity() {
