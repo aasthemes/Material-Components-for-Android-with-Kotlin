@@ -12,23 +12,6 @@
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
         <activity android:name="edu.stts.materialcomponents.activity.SplashActivity">
-
-        </activity>
-        <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu2.BasicButtonActivity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -44,6 +27,21 @@
                         android:pathPattern="/material-components"/>
             </intent-filter>
         </activity>
+        <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu2.BasicButtonActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
