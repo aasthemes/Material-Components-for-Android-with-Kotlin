@@ -11,25 +11,35 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
 
+        <Button android:text="@string/menu_13_basic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_weight="1"/>
+
         <Button android:text="@string/menu_13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button1" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:layout_weight="1"/>
 
         <Button android:text="@string/menu_13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="1"/>
 
         <Button android:text="@string/menu_13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:layout_weight="1"/>
 
         <Button android:text="@string/menu_13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"/>
-
-        <Button android:text="@string/menu_13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:layout_weight="1"/>
 
     </LinearLayout>
 

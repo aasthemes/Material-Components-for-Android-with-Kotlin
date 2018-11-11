@@ -32,5 +32,6 @@
     <string name="menu_15">TabLayout</string>
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
+    <string name="menu_13_basic">Basic</string>
 
 </resources>

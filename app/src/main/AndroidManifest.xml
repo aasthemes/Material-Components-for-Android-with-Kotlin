@@ -42,6 +42,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.BasicActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
