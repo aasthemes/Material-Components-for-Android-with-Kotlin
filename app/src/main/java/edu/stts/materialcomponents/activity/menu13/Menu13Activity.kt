@@ -1,5 +1,6 @@
 package edu.stts.materialcomponents.activity.menu13
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
@@ -16,8 +17,11 @@ class Menu13Activity: AppCompatActivity() {
 
     private fun init() {
         button1.setOnClickListener {
-            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+            val i = Intent(this, BasicActivity::class.java)
+            startActivity(i)
         }
+
     }
 
 }

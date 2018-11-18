@@ -2,18 +2,12 @@
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    <LinearLayout
+        android:layout_height="match_parent"
+        android:paddingTop="25dp">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_basic"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
-
-        <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/menu_13_basic"/>
-
-    </LinearLayout>
-
+            android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>
