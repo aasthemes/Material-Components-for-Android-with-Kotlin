@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.SearchView
 import android.support.v7.widget.Toolbar
 import android.view.Menu
@@ -14,69 +15,112 @@ import android.widget.EditText
 import android.widget.Toast
 import edu.stts.materialcomponents.R
 import edu.stts.materialcomponents.activity.menu13.Adapter.PokemonAdapter
+import edu.stts.materialcomponents.activity.menu13.Class.Pokemons
 import kotlinx.android.synthetic.main.activity_menu_13_pokemon.*
+import java.util.*
 
 class PokemonActivity: AppCompatActivity() {
 
+    var list: MutableList<Pokemons> = mutableListOf()
+
     lateinit var searchView : SearchView
-
-    lateinit var image: IntArray
-    lateinit var name: ArrayList<String>
-
-    lateinit var filter_image: IntArray
-    lateinit var filter_name: ArrayList<String>
-
     lateinit var dadapter: PokemonAdapter
-
     lateinit var con: Context
+
+    var image = intArrayOf(
+        R.drawable.arbok,
+        R.drawable.beedrill,
+        R.drawable.bulbasaur,
+        R.drawable.butterfree,
+        R.drawable.caterpie,
+        R.drawable.charizard,
+        R.drawable.charmander,
+        R.drawable.diglett,
+        R.drawable.ekans,
+        R.drawable.geodude,
+        R.drawable.ivysaur,
+        R.drawable.meowth,
+        R.drawable.nidoran,
+        R.drawable.paras,
+        R.drawable.pidgeot,
+        R.drawable.pidgey,
+        R.drawable.psyduck,
+        R.drawable.raichu,
+        R.drawable.raticate,
+        R.drawable.rattata,
+        R.drawable.seel,
+        R.drawable.spearow,
+        R.drawable.squirtle,
+        R.drawable.venusaur,
+        R.drawable.voltorb,
+        R.drawable.vulpix,
+        R.drawable.weedle,
+        R.drawable.weepinbell,
+        R.drawable.pikachu
+    )
+
+    var name = arrayListOf(
+    "arbok",
+    "beedrill",
+    "bulbasaur",
+    "butterfree",
+    "caterpie",
+    "charizard",
+    "charmander",
+    "diglett",
+    "ekans",
+    "geodude",
+    "ivysaur",
+    "meowth",
+    "nidoran",
+    "paras",
+    "pidgeot",
+    "pidgey",
+    "psyduck",
+    "raichu",
+    "raticate",
+    "rattata",
+    "seel",
+    "spearow",
+    "squirtle",
+    "venusaur",
+    "voltorb",
+    "vulpix",
+    "weedle",
+    "weepinbell",
+    "pikachu"
+    )
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_13_pokemon)
 
+//        toolbar
         val toolbar = findViewById<View>(R.id.toolbar2) as Toolbar
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Pokemon"
-        rv_basic.setHasFixedSize(true)
 
-        image = intArrayOf(
-            R.drawable.arbok,
-            R.drawable.beedrill,
-            R.drawable.bulbasaur,
-            R.drawable.butterfree,
-            R.drawable.caterpie,
-            R.drawable.charizard,
-            R.drawable.charmander,
-            R.drawable.diglett,
-            R.drawable.ekans,
-            R.drawable.geodude,
-            R.drawable.ivysaur,
-            R.drawable.meowth,
-            R.drawable.nidoran,
-            R.drawable.paras,
-            R.drawable.pidgeot,
-            R.drawable.pidgey,
-            R.drawable.psyduck,
-            R.drawable.raichu,
-            R.drawable.raticate,
-            R.drawable.rattata,
-            R.drawable.seel,
-            R.drawable.spearow,
-            R.drawable.squirtle,
-            R.drawable.venusaur,
-            R.drawable.voltorb,
-            R.drawable.vulpix,
-            R.drawable.weedle,
-            R.drawable.weepinbell,
-            R.drawable.pikachu
-        )
-        name = addNames()
-        filter_name = name
-        filter_image = image
+        newList()
         con = this
-        dadapter = PokemonAdapter(filter_image, filter_name, this)
-        rv_basic.layoutManager = LinearLayoutManager(this)
-        rv_basic.adapter = dadapter
+        rv_pokemon.layoutManager = LinearLayoutManager(con)
+        setData()
+    }
+
+    private fun newList() {
+        for (index in name.indices) {
+            val pk = Pokemons(name[index], image[index])
+            list.add(pk)
+        }
+        list.sortBy { it.getName() }
+    }
+
+    private fun setData()
+    {
+        dadapter = PokemonAdapter(list, con)
+        rv_pokemon.adapter = dadapter
+        rv_pokemon.setHasFixedSize(true)
         dadapter.notifyDataSetChanged()
     }
 
@@ -91,9 +135,8 @@ class PokemonActivity: AppCompatActivity() {
 
             override fun onMenuItemActionCollapse(item: MenuItem?): Boolean {
                 searchView.setQuery("", false)
-                dadapter = PokemonAdapter(image, name, con)
-                rv_basic.adapter = dadapter
-                dadapter.notifyDataSetChanged()
+                newList()
+                setData()
                 return true
             }
         })
@@ -107,37 +150,20 @@ class PokemonActivity: AppCompatActivity() {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 var cek = false
                 if (query.toString().isEmpty()) {
-                    filter_name = name
-                    filter_image = image
+                    newList()
                 } else {
-                    var count = 0;
+                    var tempList: MutableList<Pokemons> = mutableListOf()
                     for (index in name.indices) {
-                        if (name[index].contains(query.toString())) {
-                            count++
+                        if (name[index].capitalize().contains(query.toString())) {
+                            var pk = Pokemons(name[index], image[index])
+                            tempList.add(pk)
                         }
                     }
-
-                    if (count > 0) {
-                        filter_name = ArrayList(count)
-                        filter_image = IntArray(count)
-                        var indexing = 0;
-                        for (index in name.indices) {
-                            if (name[index].contains(query.toString())) {
-                                filter_name.add(name[index])
-                                filter_image[indexing] = image[index]
-                                indexing++
-                            }
-                        }
-                    } else {
-                        filter_image = image
-                        filter_name = name
-                        cek = true
-                    }
+                    list = tempList
+                    list.sortBy { it.getName() }
                 }
 
-                dadapter = PokemonAdapter(filter_image, filter_name, con)
-                rv_basic.adapter = dadapter
-                dadapter.notifyDataSetChanged();
+                setData()
                 if (cek) {
                     Toast.makeText(con, "Data Not Found", Toast.LENGTH_SHORT).show()
                 }
@@ -166,41 +192,6 @@ class PokemonActivity: AppCompatActivity() {
             return
         }
         super.onBackPressed()
-    }
-
-    private fun addNames() : ArrayList<String> {
-        return arrayListOf(
-            "arbok",
-            "beedrill",
-            "bulbasaur",
-            "butterfree",
-            "caterpie",
-            "charizard",
-            "charmander",
-            "diglett",
-            "ekans",
-            "geodude",
-            "ivysaur",
-            "meowth",
-            "nidoran",
-            "paras",
-            "pidgeot",
-            "pidgey",
-            "psyduck",
-            "raichu",
-            "raticate",
-            "rattata",
-            "seel",
-            "spearow",
-            "squirtle",
-            "venusaur",
-            "voltorb",
-            "vulpix",
-            "weedle",
-            "weepinbell",
-            "pikachu"
-        )
-
     }
 
 }

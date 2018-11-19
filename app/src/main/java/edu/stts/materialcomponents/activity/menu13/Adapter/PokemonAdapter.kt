@@ -11,12 +11,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import edu.stts.materialcomponents.R
+import edu.stts.materialcomponents.activity.menu13.Class.Pokemons
 
-class PokemonAdapter(val pokemon_image: IntArray, val pokemon_name: ArrayList<String>, val mContext: Context)
+class PokemonAdapter(val list: MutableList<Pokemons>, private val mContext: Context)
     : RecyclerView.Adapter<PokemonHolder>() {
 
     override fun getItemCount(): Int {
-        return pokemon_name.size
+        return list.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonHolder {
@@ -25,23 +26,19 @@ class PokemonAdapter(val pokemon_image: IntArray, val pokemon_name: ArrayList<St
     }
 
     override fun onBindViewHolder(holder: PokemonHolder, position: Int) {
-        holder.index(pokemon_image[position], pokemon_name[position])
+        var pk : Pokemons = list.get(position)
+        holder.index(pk.getImagePlace(), pk.getName())
     }
 }
 
-class PokemonHolder (itemView: View, val mpContext: Context) : RecyclerView.ViewHolder(itemView) {
+class PokemonHolder (itemView: View, private val mpContext: Context) : RecyclerView.ViewHolder(itemView) {
     // Holds the TextView that will add each animal to
-    private val iview : ImageView
-    private val tview : TextView
-
-    init {
-        iview = itemView.findViewById<View>(R.id.avatar) as ImageView
-        tview = itemView.findViewById<View>(R.id.pokemon_name) as TextView
-    }
+    private val iview : ImageView = itemView.findViewById<View>(R.id.avatar) as ImageView
+    private val tview : TextView = itemView.findViewById<View>(R.id.pokemon_name) as TextView
 
     fun index(item : Int, s : String) {
         Glide.with(mpContext).load(item).into(iview)
-        tview.text = s
+        tview.text = s.capitalize()
     }
 
 }
