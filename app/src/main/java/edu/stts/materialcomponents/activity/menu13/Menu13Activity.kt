@@ -22,6 +22,12 @@ class Menu13Activity: AppCompatActivity() {
             startActivity(i)
         }
 
+        button2.setOnClickListener {
+            //            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+            val i = Intent(this, PokemonActivity::class.java)
+            startActivity(i)
+        }
+
     }
 
 }
