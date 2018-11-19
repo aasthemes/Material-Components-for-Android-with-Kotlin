@@ -109,6 +109,7 @@ class PokemonActivity: AppCompatActivity() {
     }
 
     private fun newList() {
+        list = mutableListOf()
         for (index in name.indices) {
             val pk = Pokemons(name[index], image[index])
             list.add(pk)
@@ -154,7 +155,7 @@ class PokemonActivity: AppCompatActivity() {
                 } else {
                     var tempList: MutableList<Pokemons> = mutableListOf()
                     for (index in name.indices) {
-                        if (name[index].capitalize().contains(query.toString())) {
+                        if (name[index].contains(query.toString())) {
                             var pk = Pokemons(name[index], image[index])
                             tempList.add(pk)
                         }
