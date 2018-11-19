@@ -5,12 +5,14 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import android.view.LayoutInflater
+import android.widget.Filter
+import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import edu.stts.materialcomponents.R
 
-class PokemonAdapter(val pokemon_image: IntArray, val pokemon_name: Array<String>, val mContext: Context)
+class PokemonAdapter(val pokemon_image: IntArray, val pokemon_name: ArrayList<String>, val mContext: Context)
     : RecyclerView.Adapter<PokemonHolder>() {
 
     override fun getItemCount(): Int {
