@@ -1,8 +1,11 @@
 package edu.stts.materialcomponents.activity.menu13
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import edu.stts.materialcomponents.R
+import kotlinx.android.synthetic.main.activity_menu_13.*
 
 class Menu13Activity: AppCompatActivity() {
 
@@ -13,6 +16,18 @@ class Menu13Activity: AppCompatActivity() {
     }
 
     private fun init() {
+        button1.setOnClickListener {
+//            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+            val i = Intent(this, BasicActivity::class.java)
+            startActivity(i)
+        }
+
+        button2.setOnClickListener {
+            //            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+            val i = Intent(this, PokemonActivity::class.java)
+            startActivity(i)
+        }
+
     }
 
 }
