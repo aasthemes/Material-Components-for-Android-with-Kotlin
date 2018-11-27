@@ -16,6 +16,7 @@ import android.widget.Toast
 import edu.stts.materialcomponents.R
 import edu.stts.materialcomponents.activity.menu13.Adapter.PokemonAdapter
 import edu.stts.materialcomponents.activity.menu13.Class.Pokemons
+import edu.stts.materialcomponents.utils.Tools
 import kotlinx.android.synthetic.main.activity_menu_13_pokemon.*
 import java.util.*
 
@@ -106,6 +107,7 @@ class PokemonActivity: AppCompatActivity() {
         con = this
         rv_pokemon.layoutManager = LinearLayoutManager(con)
         setData()
+        Tools.setSystemBarColor(this, R.color.grey_1000)
     }
 
     private fun newList() {
