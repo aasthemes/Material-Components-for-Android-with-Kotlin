@@ -13,6 +13,7 @@ class Menu3Activity: AppCompatActivity() {
     }
 
     private fun init() {
+
     }
 
 }
