@@ -22,7 +22,7 @@ class Menu2Activity: AppCompatActivity() {
             val i = Intent(this, BasicButtonActivity::class.java)
             startActivity(i)
 
-            
+
         })
 
     }
