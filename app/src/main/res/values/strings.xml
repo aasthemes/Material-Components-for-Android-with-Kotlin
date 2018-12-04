@@ -32,5 +32,8 @@
     <string name="menu_15">TabLayout</string>
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_account">Account</string>
 
 </resources>

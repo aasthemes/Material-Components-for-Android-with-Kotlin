@@ -59,6 +59,8 @@ dependencies {
 
     // bottom navigation
     implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support:design:27.0.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
