@@ -10,6 +10,8 @@ class Menu6Activity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_6)
         init()
+
+
     }
 
     private fun init() {
