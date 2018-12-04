@@ -33,6 +33,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu2.BasicButtonActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.BasicCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
