@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_1"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_1" />
+            android:id="@+id/menu_1"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_1" />
     <item
-        android:id="@+id/menu_2"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_2" />
+            android:id="@+id/menu_2"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_2" />
     <item
-        android:id="@+id/menu_3"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_3"
-        android:visible="true" />
+            android:id="@+id/menu_3"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_3"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_4"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_4"
-        android:visible="true" />
+            android:id="@+id/menu_4"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_4"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_5"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_5" />
+            android:id="@+id/menu_5"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_5" />
     <item
-        android:id="@+id/menu_6"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_6" />
+            android:id="@+id/menu_6"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_6" />
     <item
-        android:id="@+id/menu_7"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_7" />
+            android:id="@+id/menu_7"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_7" />
     <item
-        android:id="@+id/menu_8"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_8" />
+            android:id="@+id/menu_8"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_8" />
     <item
-        android:id="@+id/menu_9"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_9"
-        android:visible="true" />
+            android:id="@+id/menu_9"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_9"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_10"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_10"
-        android:visible="true" />
+            android:id="@+id/menu_10"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_10"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_11"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_11" />
+            android:id="@+id/menu_11"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_11" />
     <item
-        android:id="@+id/menu_12"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_12" />
+            android:id="@+id/menu_12"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_12" />
     <item
-        android:id="@+id/menu_13"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_13" />
+            android:id="@+id/menu_13"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_13" />
     <item
-        android:id="@+id/menu_14"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_14" />
+            android:id="@+id/menu_14"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_14" />
     <item
-        android:id="@+id/menu_15"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_15"
-        android:visible="true" />
+            android:id="@+id/menu_15"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_15"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_16"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_16"
-        android:visible="true" />
+            android:id="@+id/menu_16"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_16"
+            android:visible="true" />
     <item
-        android:id="@+id/menu_17"
-        android:icon="@android:drawable/ic_menu_set_as"
-        android:title="@string/menu_17" />
+            android:id="@+id/menu_17"
+            android:icon="@android:drawable/ic_menu_set_as"
+            android:title="@string/menu_17" />
 
 </menu>
