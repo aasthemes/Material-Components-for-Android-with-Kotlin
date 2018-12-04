@@ -24,5 +24,11 @@ class Menu4Activity: AppCompatActivity() {
 
         })
 
+        button2.setOnClickListener(View.OnClickListener {
+
+            
+
+        })
+
     }
 }
