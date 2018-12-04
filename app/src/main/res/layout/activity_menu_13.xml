@@ -23,7 +23,7 @@
                 android:id="@+id/button2"
                 android:layout_weight="1"/>
 
-        <Button android:text="@string/menu_13"
+        <Button android:text="Staggered Gridview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button3"
