@@ -50,6 +50,8 @@
         <activity android:name=".activity.menu17.Menu17Activity"/>
         <activity android:name=".activity.menu7.WebViewWithProgressBar">
         </activity>
+        <activity android:name=".activity.menu7.myProgressbarIntermadiate">
+        </activity>
     </application>
 
 </manifest>

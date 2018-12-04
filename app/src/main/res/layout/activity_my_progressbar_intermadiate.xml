@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
               android:gravity="center">
-<TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_7"/>
 
     <Button
-            android:text="@string/myIndeterminateProgressBar"
+            android:id="@+id/button123"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="99dp"
-            android:id="@+id/buttonmyIndeterminateProgressBar"
-            android:layout_marginBottom="284dp"/>
+            android:text="@string/process" />
 
+    <ProgressBar
+            android:id="@+id/progressBar123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"/>
 
 </LinearLayout>

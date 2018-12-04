@@ -18,6 +18,7 @@
     <WebView
             android:id="@+id/my_web"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="251dp" tools:layout_editor_absoluteY="16dp"
+            tools:layout_editor_absoluteX="0dp"/>
 
 </android.support.constraint.ConstraintLayout>

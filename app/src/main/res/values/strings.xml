@@ -16,6 +16,7 @@
         Google Design Guidelines.
     </string>
     <string name="process">Process</string>
+    <string name="myIndeterminateProgressBar">Indeterminate Progress Bar</string>
     <string name="menu_1">Master</string>
     <string name="menu_2">TextView</string>
     <string name="menu_3">EditText</string>
