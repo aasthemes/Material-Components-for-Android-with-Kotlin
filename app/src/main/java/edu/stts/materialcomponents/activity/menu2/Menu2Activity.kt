@@ -24,6 +24,12 @@ class Menu2Activity: AppCompatActivity() {
 
         })
 
+        button2.setOnClickListener(View.OnClickListener {
+
+            val i = Intent(this, SizeButtonActivity::class.java)
+            startActivity(i)
+
+        })
     }
 
 }
