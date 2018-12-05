@@ -1,4 +1,4 @@
-package edu.stts.materialcomponents.activity.menu15.TabBasic
+package edu.stts.materialcomponents.activity.menu15.TabWithIconAndText
 
 
 import android.os.Bundle
@@ -25,7 +25,7 @@ class ThirdFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_menu_15_fragment_third_basic, container, false)
+        return inflater.inflate(R.layout.activity_menu_15_fragment_third_tabwithiconandtext, container, false)
     }
 
 
