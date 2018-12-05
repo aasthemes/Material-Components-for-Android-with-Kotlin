@@ -33,4 +33,11 @@
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
 
+    <string name="checkbox_0">CheckBox Color</string>
+    <string name="checkbox_1">CheckBox1</string>
+    <string name="checkbox_2">CheckBox2</string>
+    <string name="checkbox_3">CheckBox3</string>
+    <string name="checkbox_4">CheckBox4</string>
+    <string name="change_color">Change Color</string>
+
 </resources>

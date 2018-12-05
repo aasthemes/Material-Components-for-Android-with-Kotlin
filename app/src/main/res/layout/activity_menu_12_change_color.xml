@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_0"
+              android:layout_marginTop="50dp"
+              android:textStyle="bold"
+              android:textSize="24sp"
+              android:textColor="@color/indigo_900"
+              android:layout_gravity="center_horizontal"
+    />
+
+    <CheckBox android:id="@+id/checkbox_1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_1"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_2"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_3"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_4"
+              android:onClick="onCheckboxClicked"
+    />
+
+</LinearLayout>

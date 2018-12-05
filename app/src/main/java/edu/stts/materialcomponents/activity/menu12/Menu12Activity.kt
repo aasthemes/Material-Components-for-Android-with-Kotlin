@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import edu.stts.materialcomponents.R
-import edu.stts.materialcomponents.activity.menu2.BasicButtonActivity
 import kotlinx.android.synthetic.main.activity_menu_2.*
 
 class Menu12Activity: AppCompatActivity() {
@@ -17,12 +16,9 @@ class Menu12Activity: AppCompatActivity() {
     }
 
     private fun init() {
-
         button1.setOnClickListener(View.OnClickListener {
-
-            val i = Intent(this, BasicButtonActivity::class.java)
+            val i = Intent(this, ChangeColorActivity::class.java)
             startActivity(i)
-
         })
     }
 
