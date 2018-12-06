@@ -19,7 +19,7 @@
             android:layout_weight="1"/>
 
         <Button
-            android:text="Button 1"
+            android:text="@string/checkbox_check_all_uncheck_all"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button2"

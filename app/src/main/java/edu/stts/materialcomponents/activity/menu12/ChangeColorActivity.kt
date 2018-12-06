@@ -50,6 +50,33 @@ class ChangeColorActivity: AppCompatActivity() {
                         checkbox_4.setTextColor(Color.BLACK)
                     }
                 }
+                R.id.checkbox_red -> {
+                    if (checked) {
+                        buttoncolor.setBackgroundColor(Color.RED)
+                        checkbox_green.setChecked(false)
+                        checkbox_blue.setChecked(false)
+                    } else {
+                        buttoncolor.setBackgroundColor(Color.GRAY)
+                    }
+                }
+                R.id.checkbox_green -> {
+                    if (checked) {
+                        buttoncolor.setBackgroundColor(Color.GREEN)
+                        checkbox_red.setChecked(false)
+                        checkbox_blue.setChecked(false)
+                    } else {
+                        buttoncolor.setBackgroundColor(Color.GRAY)
+                    }
+                }
+                R.id.checkbox_blue -> {
+                    if (checked) {
+                        buttoncolor.setBackgroundColor(Color.BLUE)
+                        checkbox_red.setChecked(false)
+                        checkbox_green.setChecked(false)
+                    } else {
+                        buttoncolor.setBackgroundColor(Color.GRAY)
+                    }
+                }
             }
         }
     }

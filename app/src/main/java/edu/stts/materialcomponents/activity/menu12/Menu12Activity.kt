@@ -20,6 +20,11 @@ class Menu12Activity: AppCompatActivity() {
             val i = Intent(this, ChangeColorActivity::class.java)
             startActivity(i)
         })
+
+        button2.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, CheckAll::class.java)
+            startActivity(i)
+        })
     }
 
 }

@@ -43,4 +43,42 @@
               android:onClick="onCheckboxClicked"
     />
 
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_change_color"
+              android:layout_marginTop="50dp"
+              android:textStyle="bold"
+              android:textSize="24sp"
+              android:textColor="@color/indigo_900"
+              android:layout_gravity="center_horizontal"
+    />
+
+    <CheckBox android:id="@+id/checkbox_red"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_red"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_green"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_green"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_blue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_blue"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <Button android:id="@+id/buttoncolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+    />
+
 </LinearLayout>
