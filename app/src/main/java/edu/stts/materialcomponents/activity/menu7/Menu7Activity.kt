@@ -17,6 +17,11 @@ class Menu7Activity: AppCompatActivity() {
             val i = Intent(this, myProgressbarIntermadiate::class.java)
             startActivity(i)
         }
+
+        buttonmyWebViewWithProgressBar.setOnClickListener(){
+            val i = Intent(this, WebViewWithProgressBar::class.java)
+            startActivity(i)
+        }
     }
 
     private fun init() {
