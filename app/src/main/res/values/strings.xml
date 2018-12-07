@@ -34,4 +34,10 @@
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
 
+    <string name="menu11_1">Menu 1</string>
+    <string name="menu11_2">Menu 2</string>
+    <string name="menu11_3">Menu 3</string>
+    <string name="menu11_4">Menu 4</string>
+    <string name="menu11_5">Menu 5</string>
+
 </resources>
