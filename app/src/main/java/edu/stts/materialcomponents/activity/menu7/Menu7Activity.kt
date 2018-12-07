@@ -13,10 +13,9 @@ class Menu7Activity: AppCompatActivity() {
         setContentView(R.layout.activity_menu_7)
         init()
 
-        buttonProcess.setOnClickListener(){
-            val i = Intent(this, WebViewWithProgressBar::class.java)
+        buttonmyIndeterminateProgressBar.setOnClickListener(){
+            val i = Intent(this, myProgressbarIntermadiate::class.java)
             startActivity(i)
-            overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left)
         }
     }
 
