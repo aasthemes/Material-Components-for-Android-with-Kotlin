@@ -36,6 +36,12 @@ class Menu13Activity: AppCompatActivity() {
             startActivity(i)
         }
 
+        button4.setOnClickListener {
+            //            Toast.makeText(this, "This is a Toast Message", Toast.LENGTH_SHORT).show()
+            val i = Intent(this, SwipeActivity::class.java)
+            startActivity(i)
+        }
+
     }
 
 }
