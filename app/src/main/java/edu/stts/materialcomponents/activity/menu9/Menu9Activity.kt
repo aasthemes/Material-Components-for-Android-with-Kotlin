@@ -34,17 +34,22 @@ class Menu9Activity: AppCompatActivity() {
         }
         button3.setOnClickListener {
             setContentView(R.layout.activity_menu_9_functional)
+
             val views = findViewById<View>(R.id.bottom_navigation) as BottomNavigationView
             views.setOnNavigationItemReselectedListener { item ->
+                var selectedFragment: Fragment? = null
                 when (item.itemId){
-                    R.id.nav_back -> Toast.makeText(application , "Back is Clicked" , Toast.LENGTH_SHORT).show()
-                    R.id.nav_home -> Toast.makeText(application , "Home is Clicked" , Toast.LENGTH_SHORT).show()
-                    R.id.nav_account -> Toast.makeText(application , "Account is Clicked" , Toast.LENGTH_SHORT).show()
+                    R.id.nav_back -> selectedFragment = FragmentBack()
+                    R.id.nav_home -> selectedFragment = FragmentHome()
+                    R.id.nav_account -> selectedFragment = FragmentAccount()
                 }
+                supportFragmentManager.beginTransaction().replace(
+                    R.id.fragment_container,
+                    selectedFragment
+                ).commit()
             }
         }
 
 
     }
-
 }
