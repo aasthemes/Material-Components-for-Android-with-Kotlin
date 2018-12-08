@@ -5,10 +5,11 @@
 >
     <android.support.design.widget.BottomNavigationView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:menu="@menu/menu_navigation"
-    >
+            app:menu="@menu/menu_bottom_navigation_text"
+            app:itemBackground="@color/pink_50"
+            app:itemTextColor="@color/bottom_navigation_state_text">
 
     </android.support.design.widget.BottomNavigationView>
 

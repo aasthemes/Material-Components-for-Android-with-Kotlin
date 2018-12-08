@@ -22,11 +22,11 @@
             android:orientation="vertical">
 
         <Button
-                android:text="Bottom Navigation Style"
+                android:text="Bottom Navigation With Text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button1" android:layout_weight="1"/>
         <Button
-                android:text="Bottom Navigation Animation"
+                android:text="Bottom Navigation With Icon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
         <Button
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"/>
         <Button
-                android:text="Button 1"
+                android:text="Button 2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
 
