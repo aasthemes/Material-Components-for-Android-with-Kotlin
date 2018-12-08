@@ -35,4 +35,10 @@
             android:id="@+id/buttonmyStyleProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+    <Button
+            android:text="@string/myAsyncTask"
+            android:id="@+id/buttonmyAsyncTaskProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </LinearLayout>
