@@ -15,26 +15,26 @@ class myStyleProgressBar : AppCompatActivity() {
 
         buttonProcess.setOnClickListener(){
             if(radioButtonCicle.isChecked){
-                progressBarCircle.visibility = View.VISIBLE
+                progressBarCircle.visibility = android.view.View.VISIBLE
                 var i=0;
                 while(i<Int.MAX_VALUE){
                     i++
-                    progressBarCircle.progress + 10
+                    progressBarCircle.progress = progressBarCircle.progress + 10
                     textViewProgress.text = "Progress : $i%"
                     if(progressBarCircle.progress == 100){
-                        progressBarCircle.visibility = View.GONE
+                        progressBarCircle.visibility = android.view.View.GONE
                         exitProcess(1)
                     }
                 }
             }else if(radioButtonHorizontal.isChecked){
-                progressBarHorizontal.visibility = View.VISIBLE
+                progressBarHorizontal.visibility = android.view.View.VISIBLE
                 var i=0;
                 while(i<Int.MAX_VALUE){
                     i++
-                    progressBarHorizontal.progress + 10
+                    progressBarHorizontal.progress  = progressBarHorizontal.progress + 10
                     textViewProgress.text = "Progress : $i%"
                     if(progressBarHorizontal.progress == 100){
-                        progressBarHorizontal.visibility = View.GONE
+                        progressBarHorizontal.visibility = android.view.View.GONE
                         exitProcess(1)
                     }
                 }
