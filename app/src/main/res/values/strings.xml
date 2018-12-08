@@ -16,6 +16,9 @@
         Google Design Guidelines.
     </string>
     <string name="process">Process</string>
+    <string name="myStyleProgressBar">Style Progress Bar</string>
+    <string name="myDialogProgressBar">Dialog Progress Bar</string>
+    <string name="myWebViewProgressBar">Web View with Progress Bar</string>
     <string name="myIndeterminateProgressBar">Indeterminate Progress Bar</string>
     <string name="menu_1">Master</string>
     <string name="menu_2">TextView</string>
