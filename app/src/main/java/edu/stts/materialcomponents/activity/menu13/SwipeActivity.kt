@@ -62,7 +62,7 @@ class SwipeActivity: AppCompatActivity(), Callback<List<Webservice>> {
 
     override fun onResponse(call: Call<List<Webservice>>, response: Response<List<Webservice>>) {
         if (response.isSuccessful) {
-            var listapi2 : MutableList<Webserviceclass> = mutableListOf()
+            val listapi2 : MutableList<Webserviceclass> = mutableListOf()
             val data = response.body()
             data?.map {
                 listapi2.add(Webserviceclass(it.title, it.body))
@@ -75,9 +75,8 @@ class SwipeActivity: AppCompatActivity(), Callback<List<Webservice>> {
 
             swipeController = SwipeController(object : SwipeControllerActions() {
                 override fun onRightClicked(position: Int) {
-                    listapi2.removeAt(position)
-                    swipeadapter = SwipeAdapter(listapi2, con)
-                    rv_swipeable.adapter = swipeadapter
+                    swipeadapter.list.removeAt(position)
+                    swipeadapter.notifyDataSetChanged()
                 }
             })
 

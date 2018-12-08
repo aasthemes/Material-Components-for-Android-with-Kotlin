@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="2dp"
-        android:layout_marginBottom="14dp">
+        android:layout_marginBottom="2dp">
 
     <RelativeLayout
             android:layout_width="match_parent"
@@ -17,18 +17,19 @@
                 android:id="@+id/img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:contentDescription="images"/>
 
         <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 android:text="Hello World"
                 android:textColor="#ffffff"
                 android:layout_below="@+id/img"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
                 android:gravity="center_horizontal"
                 android:layout_alignParentBottom="true"
                 android:background="#1976D2"/>
