@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_my_style_progress_bar.*
 import android.graphics.PorterDuff
 import android.view.View
 import android.widget.ProgressBar
-
+import kotlin.system.exitProcess
 
 
 class myColorProgressBar : AppCompatActivity() {
@@ -17,7 +17,6 @@ class myColorProgressBar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_color_progress_bar)
-
 
         myProgressBar.visibility = View.INVISIBLE
         myProgressBar.max = 100

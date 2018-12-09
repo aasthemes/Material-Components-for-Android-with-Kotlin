@@ -59,17 +59,14 @@ class myStyleProgressBar : AppCompatActivity() {
             myProgress.max = 100
             this@myStyleProgressBar.runOnUiThread(java.lang.Runnable {
                 myProgress.visibility = View.VISIBLE
-                toast(" Harap tunggu: $progress%")
-                if(myProgress.progress.equals(100)){
+                if(myProgress.progress == 100){
                     myProgress.visibility = View.GONE
-                    toast("sukses")
                     finish()
                     exitProcess(1)
                 }
                 try {
                     Thread.sleep(1000)
                     myProgress.setProgress(progress)
-
                     setProgressValue(progress + 10,myProgress)
                 }   catch (e : Exception){
                     toast(e.toString())
