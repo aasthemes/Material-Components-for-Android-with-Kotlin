@@ -32,9 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/progressBarCircle"
-            tools:visibility="invisible"
+            tools:visibility="visible"
             android:max="100"
-            android:progress="1" android:visibility="invisible"/>
+            android:progress="1" android:visibility="visible"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"

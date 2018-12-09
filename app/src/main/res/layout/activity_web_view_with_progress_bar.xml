@@ -9,40 +9,59 @@ android:background="#edfaed"
 android:padding="0dp"
 android:orientation="vertical">
 
-
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
-        <Button
-                android:id="@+id/button_load"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Load URL"
-                android:textAllCaps="false"/>
-        <Button
-                android:id="@+id/button_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                android:textAllCaps="false"
-                android:enabled="false"/>
-        <Button
-                android:id="@+id/button_forward"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Forward"
-                android:textAllCaps="false"
-                android:enabled="false"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPostalAddress"
+                android:hint="@string/UrlHere"
+                android:id="@+id/editTextUrl"
+                android:layout_weight="1"/>
     </LinearLayout>
+
     <ProgressBar
             android:id="@+id/progress_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
-<WebView
-        android:id="@+id/web_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <Button
+                android:id="@+id/button_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/process"
+                android:textAllCaps="false"/>
+
+        <Button
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Kembali"
+                android:textAllCaps="false"
+                android:enabled="false"/>
+
+        <Button
+                android:id="@+id/button_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lanjutkan"
+                android:textAllCaps="false"
+                android:enabled="false"/>
+    </LinearLayout>
+
+    <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 </LinearLayout>

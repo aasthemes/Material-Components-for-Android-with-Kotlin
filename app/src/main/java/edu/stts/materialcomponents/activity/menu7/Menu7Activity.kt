@@ -33,6 +33,11 @@ class Menu7Activity: AppCompatActivity() {
             startActivity(i)
         }
 
+        buttonmyAsyncTaskProgressBar.setOnClickListener(){
+            val i = Intent(this, myAsyProgressBar::class.java)
+            startActivity(i)
+        }
+
     }
 
     private fun init() {
