@@ -28,5 +28,5 @@ class FirstFragment : Fragment() {
         return inflater.inflate(R.layout.activity_menu_15_fragment_first_basic, container, false)
     }
 
-
+    //menambah firstfragmenttabandscrolling
 }
