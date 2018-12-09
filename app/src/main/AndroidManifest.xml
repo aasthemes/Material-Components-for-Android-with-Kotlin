@@ -64,6 +64,8 @@
         </activity>
         <activity android:name=".activity.menu7.myAsyProgressBar">
         </activity>
+        <activity android:name=".activity.menu7.myColorProgressBar">
+        </activity>
     </application>
 
 </manifest>

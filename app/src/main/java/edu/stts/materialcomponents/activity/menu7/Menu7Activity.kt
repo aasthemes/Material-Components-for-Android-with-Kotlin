@@ -38,6 +38,10 @@ class Menu7Activity: AppCompatActivity() {
             startActivity(i)
         }
 
+        buttonmyColorProgressBar.setOnClickListener(){
+            val i = Intent(this, myColorProgressBar::class.java)
+            startActivity(i)
+        }
     }
 
     private fun init() {

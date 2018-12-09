@@ -28,14 +28,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/buttonProcess"/>
     <ProgressBar
-            style="?android:attr/progressBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressBarCircle"
-            tools:visibility="visible"
-            android:max="100"
-            android:progress="1" android:visibility="visible"/>
-    <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,9 +35,12 @@
             tools:visibility="invisible"
             android:max="100"
             android:progress="10" android:visibility="invisible"/>
-    <TextView
-            android:text=""
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewProgress"/>
+            android:id="@+id/progressBarCircle"
+            tools:visibility="invisible"
+            android:max="100"
+            android:progress="1" android:visibility="invisible"/>
 </LinearLayout>

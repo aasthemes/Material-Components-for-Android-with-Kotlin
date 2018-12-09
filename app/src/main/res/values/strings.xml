@@ -19,7 +19,7 @@
     <string name="Kembali">Kembali</string>
     <string name="Lanjutkan">Lanjutkan</string>
     <string name="process">Proses</string>
-    <string name="myAsyncTask">AsyncTask  with Progress Bar</string>
+    <string name="myAsyncTask">AsyncTask with Progress Bar</string>
     <string name="myStyleProgressBar">Style Progress Bar</string>
     <string name="myDialogProgressBar">Dialog Progress Bar</string>
     <string name="myWebViewProgressBar">Web View with Progress Bar</string>
