@@ -13,4 +13,5 @@ class MainActivity: AppCompatActivity() {
         viewpager_main.adapter = MyPagerAdapter(supportFragmentManager)
         tabs_main.setupWithViewPager(viewpager_main)
     }
+    //tambahmain activity
 }
