@@ -14,3 +14,5 @@ class MainActivity: AppCompatActivity() {
         tabs_main.setupWithViewPager(viewpager_main)
     }
 }
+
+//TambahSecondFragment
