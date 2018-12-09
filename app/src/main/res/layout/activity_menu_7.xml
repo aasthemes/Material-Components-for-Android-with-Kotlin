@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"/>
 
     <Button
-            android:text="@string/myDialogProgressBar"
+            android:text="Splash Screen with Progress Bar"
             android:id="@+id/buttonmyDialogProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
