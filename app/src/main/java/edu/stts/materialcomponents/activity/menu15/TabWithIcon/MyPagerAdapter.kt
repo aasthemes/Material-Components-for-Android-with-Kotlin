@@ -38,3 +38,5 @@ class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
         }
     }
 }
+
+//TambahSecondFragment
