@@ -34,6 +34,8 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.BasicCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.TimelineCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.OverlapCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>

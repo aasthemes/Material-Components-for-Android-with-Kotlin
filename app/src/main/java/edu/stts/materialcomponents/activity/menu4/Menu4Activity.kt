@@ -26,7 +26,15 @@ class Menu4Activity: AppCompatActivity() {
 
         button2.setOnClickListener(View.OnClickListener {
 
+            val i = Intent(this, TimelineCardViewActivity::class.java)
+            startActivity(i)
 
+        })
+
+        button3.setOnClickListener(View.OnClickListener {
+
+            val i = Intent(this, OverlapCardViewActivity::class.java)
+            startActivity(i)
 
         })
 
