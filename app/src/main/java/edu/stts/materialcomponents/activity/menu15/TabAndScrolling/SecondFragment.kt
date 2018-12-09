@@ -25,5 +25,5 @@ class SecondFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.activity_menu_15_fragment_second_tabandscroll, container, false)
     }
-
+//TambahSecondFragment
 }
