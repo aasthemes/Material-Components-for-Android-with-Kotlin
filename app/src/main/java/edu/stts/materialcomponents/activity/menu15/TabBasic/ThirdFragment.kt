@@ -27,6 +27,6 @@ class ThirdFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.activity_menu_15_fragment_third_basic, container, false)
     }
-
+//TambahThirdFragment
 
 }
