@@ -28,5 +28,5 @@ class SecondFragment : Fragment() {
         return inflater.inflate(R.layout.activity_menu_15_fragment_second_basic, container, false)
     }
 
-
+//TambahSecondFragment
 }
