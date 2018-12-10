@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <TextView
-            android:id="@+id/welcome"
+            android:id="@+id/textBasic"
             android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:text="Textview"
@@ -18,7 +18,7 @@
             android:text="Back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button" android:layout_marginTop="8dp"
+            android:id="@+id/buttonBackFromBasic" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"/>
 </android.support.constraint.ConstraintLayout>

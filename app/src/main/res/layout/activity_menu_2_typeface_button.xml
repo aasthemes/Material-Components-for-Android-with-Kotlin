@@ -7,4 +7,16 @@
         android:layout_height="match_parent"
         tools:context=".activity.menu2.TypefaceButtonActivity">
 
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/textTypeface"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp" android:id="@+id/buttonBackFromTypeface"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"/>
 </android.support.constraint.ConstraintLayout>
