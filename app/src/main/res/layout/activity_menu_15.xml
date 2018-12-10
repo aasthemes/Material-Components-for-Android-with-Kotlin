@@ -24,7 +24,9 @@
         <Button
                 android:text="Tab Basic"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button1" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_weight="1"/>
         <Button
                 android:text="Tab And Scrolling"
                 android:layout_width="match_parent"
@@ -34,13 +36,21 @@
         <Button
                 android:text="Tab With Icon"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/><Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="1"/>
+        <Button
                 android:text="Tab With Text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button4" android:layout_weight="1"/><Button
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:layout_weight="1"/>
+        <Button
                 android:text="Tab With Icon And Text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:layout_weight="1"/>
 
     </LinearLayout>
 

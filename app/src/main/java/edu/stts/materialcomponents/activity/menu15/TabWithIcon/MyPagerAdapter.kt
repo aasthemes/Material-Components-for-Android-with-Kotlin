@@ -4,7 +4,8 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
 
-class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
+class MyPagerAdapter(fm: FragmentManager, private var tabCount: Int)
+    : FragmentPagerAdapter(fm) {
     // sebuah list yang menampung objek Fragment
 //    private val pages = listOf(
 //        FirstFragment(),
@@ -25,18 +26,20 @@ class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
         }
     }
 
+//    override fun getCount(): Int {
+//        return 3
+//    }
     override fun getCount(): Int {
-        return 3
+        return tabCount
     }
 
-
-    override fun getPageTitle(position: Int): CharSequence? {
-        return when(position){
-            0 -> "First Tab"
-            1 -> "Second Tab"
-            else -> "Third Tab"
-        }
-    }
+//    override fun getPageTitle(position: Int): CharSequence? {
+//        return when(position){
+//            0 -> "First Tab"
+//            1 -> "Second Tab"
+//            else -> "Third Tab"
+//        }
+//    }
 }
 
 //TambahSecondFragment
