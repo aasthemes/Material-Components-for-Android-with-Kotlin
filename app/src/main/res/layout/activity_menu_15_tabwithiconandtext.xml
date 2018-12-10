@@ -3,8 +3,10 @@
      xmlns:android="http://schemas.android.com/apk/res/android"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
      tools:context=".activity.menu15.TabWithIconAndText.MainActivity">
+
     <android.support.v4.view.ViewPager
 
             android:id="@+id/viewpager_main"
@@ -12,10 +14,11 @@
             android:layout_height="wrap_content">
 
         <android.support.design.widget.TabLayout
-                android:id="@+id/tabs_main"
+                android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top"/>
+                app:tabMode="fixed"
+                app:tabGravity="fill"/>
 
     </android.support.v4.view.ViewPager>
 
