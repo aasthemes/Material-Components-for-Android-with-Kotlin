@@ -49,6 +49,16 @@
         <activity android:name=".activity.menu16.Menu16Activity"/>
         <activity android:name=".activity.menu17.Menu17Activity">
         </activity>
+        <activity android:name=".activity.menu11.AddMenu1Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu2Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu3Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu4Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu5Activity">
+        </activity>
     </application>
 
 </manifest>
