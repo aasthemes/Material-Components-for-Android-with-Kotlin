@@ -1,22 +1,21 @@
 package edu.stts.materialcomponents.activity.menu2
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import edu.stts.materialcomponents.R
-import kotlinx.android.synthetic.main.activity_menu_2_highlight_button.*
+import kotlinx.android.synthetic.main.activity_menu_2_style_button.*
 
-class HighlightButtonActivity : AppCompatActivity() {
+class StyleButtonActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_2_highlight_button)
+        setContentView(R.layout.activity_menu_2_style_button)
         init()
     }
 
     private fun init(){
-        buttonBackFromHighlight.setOnClickListener(View.OnClickListener {
+        buttonBackFromStyle.setOnClickListener(View.OnClickListener {
             finish()
         })
     }

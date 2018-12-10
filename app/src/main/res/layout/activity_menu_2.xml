@@ -28,9 +28,9 @@
                 android:text="Color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/buttonGoColor" android:layout_weight="1"/><Button
-                android:text="Highlight"
+                android:text="Style"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/buttonGoHighlight" android:layout_weight="1"/><Button
+                android:layout_height="wrap_content" android:id="@+id/buttonGoStyle" android:layout_weight="1"/><Button
                 android:text="Size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/buttonGoSize" android:layout_weight="1"/><Button

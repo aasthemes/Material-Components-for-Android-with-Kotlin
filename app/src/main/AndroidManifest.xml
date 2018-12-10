@@ -54,7 +54,7 @@
         </activity>
         <activity android:name=".activity.menu2.ColorButtonActivity">
         </activity>
-        <activity android:name=".activity.menu2.HighlightButtonActivity">
+        <activity android:name=".activity.menu2.StyleButtonActivity">
         </activity>
     </application>
 

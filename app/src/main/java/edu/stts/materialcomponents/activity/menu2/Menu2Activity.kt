@@ -28,8 +28,8 @@ class Menu2Activity: AppCompatActivity() {
             startActivity(i)
         })
 
-        buttonGoHighlight.setOnClickListener(View.OnClickListener {
-            val i = Intent(this, HighlightButtonActivity::class.java)
+        buttonGoStyle.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, StyleButtonActivity::class.java)
             startActivity(i)
         })
 
