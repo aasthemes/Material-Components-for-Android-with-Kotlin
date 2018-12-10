@@ -32,9 +32,9 @@ class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm)  {
 
     override fun getPageTitle(position: Int): CharSequence? {
         return when(position){
-            0 -> "First Tab"
-            1 -> "Second Tab"
-            else -> "Third Tab"
+            0 -> "-----"
+            1 -> "-----"
+            else -> "-----"
         }
     }
     //TambahPagerAdapter
