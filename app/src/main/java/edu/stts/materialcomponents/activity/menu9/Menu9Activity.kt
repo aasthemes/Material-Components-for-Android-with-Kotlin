@@ -36,18 +36,23 @@ class Menu9Activity: AppCompatActivity() {
             setContentView(R.layout.activity_menu_9_functional)
 
             val views = findViewById<View>(R.id.bottom_navigation) as BottomNavigationView
-            views.setOnNavigationItemReselectedListener { item ->
+            views.setOnNavigationItemSelectedListener { item ->
                 var selectedFragment: Fragment? = null
                 when (item.itemId){
                     R.id.nav_back -> selectedFragment = FragmentBack()
                     R.id.nav_home -> selectedFragment = FragmentHome()
                     R.id.nav_account -> selectedFragment = FragmentAccount()
                 }
+
                 supportFragmentManager.beginTransaction().replace(
                     R.id.fragment_container,
                     selectedFragment
                 ).commit()
+
+                true
             }
+
+
         }
 
 
