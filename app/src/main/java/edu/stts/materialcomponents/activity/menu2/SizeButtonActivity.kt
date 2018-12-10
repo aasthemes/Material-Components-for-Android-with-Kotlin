@@ -17,9 +17,6 @@ class SizeButtonActivity : AppCompatActivity() {
 
     private fun init() {
         buttonBackFromSize.setOnClickListener(View.OnClickListener {
-
-            //val i = Intent(this, Menu2Activity::class.java)
-            //startActivity(i)
             finish()
         })
     }

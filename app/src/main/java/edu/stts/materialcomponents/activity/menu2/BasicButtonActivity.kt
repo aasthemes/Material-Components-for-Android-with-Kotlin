@@ -17,9 +17,6 @@ class BasicButtonActivity: AppCompatActivity() {
 
     private fun init() {
             buttonBackFromBasic.setOnClickListener(View.OnClickListener {
-
-            //val i = Intent(this, Menu2Activity::class.java)
-            //startActivity(i)
             finish()
         })
     }

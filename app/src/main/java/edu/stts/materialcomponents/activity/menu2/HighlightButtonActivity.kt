@@ -17,8 +17,6 @@ class HighlightButtonActivity : AppCompatActivity() {
 
     private fun init(){
         buttonBackFromHighlight.setOnClickListener(View.OnClickListener {
-            //val i = Intent(this, Menu2Activity::class.java)
-            //startActivity(i)
             finish()
         })
     }

@@ -18,8 +18,6 @@ class ColorButtonActivity : AppCompatActivity() {
 
     private fun init(){
         buttonBackFromColor.setOnClickListener(View.OnClickListener {
-            //val i = Intent(this,Menu2Activity::class.java)
-            //startActivity(i)
             finish()
         })
     }
