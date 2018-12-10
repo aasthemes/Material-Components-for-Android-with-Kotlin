@@ -26,13 +26,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/buttonSlider" android:layout_weight="1"/>
         <Button
-                android:text="Zoom In - Zoom Out"
+                android:text="Rounded ImageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/buttonRounded" android:layout_weight="1"/>
         <Button
-            android:text="Circle VIew"
+            android:text="Circular ImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
+            android:layout_height="wrap_content" android:id="@+id/buttonCircular" android:layout_weight="1"/>
         <Button
             android:text="Button 1"
             android:layout_width="match_parent"
