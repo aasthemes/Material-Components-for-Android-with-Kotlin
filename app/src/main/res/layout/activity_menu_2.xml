@@ -22,26 +22,21 @@
     android:orientation="vertical">
 
         <Button
-                android:text="Button 1"
+                android:text="Basic"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button1" android:layout_weight="1"/>
-        <Button
-                android:text="Button 1"
+                android:layout_height="wrap_content" android:id="@+id/buttonGoBasic" android:layout_weight="1"/><Button
+                android:text="Color"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:layout_weight="1"/><Button
-            android:text="Button 1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button3" android:layout_weight="1"/>
-        <Button
-            android:text="Button 1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/button4"
-            android:layout_weight="1"/>
-        <Button
-            android:text="Button 1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/buttonGoColor" android:layout_weight="1"/><Button
+                android:text="Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonGoStyle" android:layout_weight="1"/><Button
+                android:text="Size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonGoSize" android:layout_weight="1"/><Button
+                android:text="Typeface"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonGoTypeface" android:layout_weight="1"/>
 
     </LinearLayout>
 

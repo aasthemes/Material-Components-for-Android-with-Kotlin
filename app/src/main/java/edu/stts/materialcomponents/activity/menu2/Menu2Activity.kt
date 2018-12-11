@@ -16,14 +16,32 @@ class Menu2Activity: AppCompatActivity() {
     }
 
     private fun init() {
-
-        button1.setOnClickListener(View.OnClickListener {
+        buttonGoBasic.setOnClickListener(View.OnClickListener {
 
             val i = Intent(this, BasicButtonActivity::class.java)
             startActivity(i)
-
         })
 
+        buttonGoSize.setOnClickListener(View.OnClickListener {
+
+            val i = Intent(this, SizeButtonActivity::class.java)
+            startActivity(i)
+        })
+
+        buttonGoStyle.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, StyleButtonActivity::class.java)
+            startActivity(i)
+        })
+
+        buttonGoColor.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, ColorButtonActivity::class.java)
+            startActivity(i)
+        })
+
+        buttonGoTypeface.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, TypefaceButtonActivity::class.java)
+            startActivity(i)
+        })
     }
 
 }
