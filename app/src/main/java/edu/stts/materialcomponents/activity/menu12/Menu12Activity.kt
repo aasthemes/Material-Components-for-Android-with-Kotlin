@@ -22,8 +22,6 @@ class Menu12Activity: AppCompatActivity() {
         })
 
         button2.setOnClickListener(View.OnClickListener {
-            val i = Intent(this, CheckAll::class.java)
-            startActivity(i)
         })
     }
 
