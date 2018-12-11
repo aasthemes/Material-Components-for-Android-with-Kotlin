@@ -44,7 +44,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu12.NextActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckboxWithAdapter"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.ChangeColorActivity"/>
-        <!--<activity android:name="edu.stts.materialcomponents.activity.menu12.CheckAll"/>-->
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckAll"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>

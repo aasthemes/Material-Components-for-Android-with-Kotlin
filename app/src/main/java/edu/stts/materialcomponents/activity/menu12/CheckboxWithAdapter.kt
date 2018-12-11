@@ -49,8 +49,7 @@ class CheckboxWithAdapter : AppCompatActivity() {
 
     private fun getModel(isSelect: Boolean): ArrayList<Model> {
         val list = ArrayList<Model>()
-        for (i in 0..3) {
-
+        for (i in 0..5) {
             val model = Model()
             model.setSelecteds(isSelect)
             model.setAnimals(animallist[i])
