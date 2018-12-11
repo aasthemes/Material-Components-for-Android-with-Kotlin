@@ -5,32 +5,27 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
 >
+
     <Button
-        android:id="@+id/menu_17_btn_popup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FAB Popup"
-        android:padding="8dp"
-    />
+            android:text="FAB Popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/menu_17_btn_popup" android:layout_weight="1"/>
     <Button
-        android:id="@+id/menu_17_btn_icon_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FAB Icon Label"
-        android:padding="8dp"
-    />
+            android:text="FAB Icon Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/menu_17_btn_icon_label" android:layout_weight="1"/>
     <Button
-        android:id="@+id/menu_17_btn_stroke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FAB Stroke Loading"
-        android:padding="8dp"
-    />
+            android:text="FAB Stroke Loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/menu_17_btn_stroke" android:layout_weight="1"/>
     <Button
-        android:id="@+id/menu_17_btn_position"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FAB Custom Position"
-        android:padding="8dp"
-    />
+            android:text="FAB Custom Position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/menu_17_btn_position" android:layout_weight="1"/>
+    <Button
+            android:text="FAB Background Color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/menu_17_btn_color" android:layout_weight="1"/>
+
+
 </LinearLayout>
