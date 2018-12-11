@@ -13,6 +13,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
+
+        <meta-data
+                android:name="android.webkit.WebView.MetricsOptOut"
+                android:value="true"/>
+
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -55,6 +60,24 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6SliderActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
+        <activity android:name=".activity.menu7.WebViewWithProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myProgressbarIntermadiate">
+        </activity>
+        <activity android:name=".activity.menu7.myDialogProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myStyleProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myAsyProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myColorProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.mySplashProgressBar">
+        </activity>
+        <activity android:name=".myDrawlableProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myCustomDrawlableProgressBar">
+        </activity>
         <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>

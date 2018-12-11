@@ -26,7 +26,6 @@ dependencies {
     final SUPPORT_LIBRARY_VERSION = '27.1.1'
 
     // App Dependencies
-
     // google support library ---------------------------------------------------------------------
     implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
     implementation "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
