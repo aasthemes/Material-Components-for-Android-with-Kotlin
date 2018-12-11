@@ -18,11 +18,11 @@ class PopupMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_17_popup_menu)
 
-        action_b.setOnClickListener {
+        action_b_no_label.setOnClickListener {
             Toast.makeText(this, "You click Apps submenu", Toast.LENGTH_SHORT).show()
         }
 
-        action_a.setOnClickListener {
+        action_a_no_label.setOnClickListener {
             Toast.makeText(this, "You click Send submenu", Toast.LENGTH_SHORT).show()
         }
 
