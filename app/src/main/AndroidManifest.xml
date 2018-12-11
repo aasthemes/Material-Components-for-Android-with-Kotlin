@@ -51,7 +51,8 @@
         <activity android:name=".activity.menu17.BasicWithCustomPosition"/>
         <activity android:name=".activity.menu17.PopupMenu"/>
         <activity android:name=".activity.menu17.StrokeLoading"/>
-        <activity android:name=".activity.menu17.PopupLabel">
+        <activity android:name=".activity.menu17.PopupLabel"/>
+        <activity android:name=".activity.menu17.BackgroundColor">
         </activity>
     </application>
 
