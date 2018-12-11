@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.bottom_sheet.*
 import kotlinx.android.synthetic.main.main_content.*
 import kotlinx.android.synthetic.main.main_content8.*
 
+
 class Menu8Activity: AppCompatActivity() {
 
     private lateinit var sheetBehavior: BottomSheetBehavior<LinearLayout>
