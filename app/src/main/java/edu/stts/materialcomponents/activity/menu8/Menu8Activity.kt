@@ -58,11 +58,11 @@ class Menu8Activity: AppCompatActivity() {
     }
     private fun expandCloseSheet() {
         if (sheetBehavior!!.state != BottomSheetBehavior.STATE_EXPANDED) {
-                sheetBehavior!!.state = BottomSheetBehavior.STATE_EXPANDED
-                btBottomSheet.text = "Close Bottom Sheet"
+            sheetBehavior!!.state = BottomSheetBehavior.STATE_EXPANDED
+            btBottomSheet.text = "Close Bottom Sheet"
         } else {
-                sheetBehavior!!.state = BottomSheetBehavior.STATE_COLLAPSED
-                btBottomSheet.text = "Expand Bottom Sheet"
+            sheetBehavior!!.state = BottomSheetBehavior.STATE_COLLAPSED
+            btBottomSheet.text = "Expand Bottom Sheet"
         }
     }
 }
