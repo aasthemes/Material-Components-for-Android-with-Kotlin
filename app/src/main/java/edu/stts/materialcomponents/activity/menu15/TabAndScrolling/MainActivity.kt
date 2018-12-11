@@ -10,7 +10,9 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewpager_main.adapter = MyPagerAdapter(supportFragmentManager)
+        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
+        viewpager_main.adapter = fragmentAdapter
+
         tabs_main.setupWithViewPager(viewpager_main)
     }
     //tambahmain activity

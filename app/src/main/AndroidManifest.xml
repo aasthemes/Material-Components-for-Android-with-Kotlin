@@ -44,6 +44,11 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabBasic.MainActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabAndScrolling.MainActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIcon.MainActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithText.MainActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIconAndText.MainActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu17.Menu17Activity"/>
     </application>
