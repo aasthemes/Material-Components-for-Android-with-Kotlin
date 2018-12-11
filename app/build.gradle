@@ -25,6 +25,8 @@ android {
 dependencies {
     final SUPPORT_LIBRARY_VERSION = '27.1.1'
 
+    compile 'com.google.android:flexbox:0.3.2'
+
     // App Dependencies
 
     // google support library ---------------------------------------------------------------------
