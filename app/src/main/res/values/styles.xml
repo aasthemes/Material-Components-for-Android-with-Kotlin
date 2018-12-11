@@ -1,6 +1,6 @@
 <resources>
 
-    <style name="AppTheme" parent="BaseTheme" />
+    <style name="AppTheme" parent="BaseTheme"/>
 
     <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -12,9 +12,9 @@
         <item name="android:dialogTheme">@style/Dialog.Theme</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="Button.Primary" parent="@style/Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/colorPrimary</item>
@@ -231,8 +231,9 @@
         <item name="listPreferredItemHeightSmall">50dp</item>
     </style>
 
-    <style name="MaterialButton" parent="Theme.AppCompat">
-        <item name="colorButtonNormal">@color/colorPrimary</item>
-        <item name="colorControlHighlight">@color/colorAccent</item>
+    <style name="menu_labels_style">
+        <item name="android:background">@color/grey_90</item>
+        <item name="android:textColor">@color/amber_50</item>
+        <item name="android:padding">5dp</item>
     </style>
 </resources>

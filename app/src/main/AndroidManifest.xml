@@ -13,7 +13,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
-
+        
         <meta-data
                 android:name="android.webkit.WebView.MetricsOptOut"
                 android:value="true"/>
@@ -36,6 +36,7 @@
                         android:scheme="http"/>
             </intent-filter>
         </activity>
+
         <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
@@ -92,6 +93,12 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu17.Menu17Activity"/>
+        <activity android:name=".activity.menu17.BasicWithCustomPosition"/>
+        <activity android:name=".activity.menu17.PopupMenu"/>
+        <activity android:name=".activity.menu17.StrokeLoading"/>
+        <activity android:name=".activity.menu17.PopupLabel"/>
+        <activity android:name=".activity.menu17.BackgroundColor">
+        </activity>
     </application>
 
 </manifest>
