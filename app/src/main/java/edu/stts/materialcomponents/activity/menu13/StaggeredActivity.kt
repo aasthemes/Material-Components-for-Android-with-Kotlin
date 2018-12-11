@@ -3,6 +3,8 @@ package edu.stts.materialcomponents.activity.menu13
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.StaggeredGridLayoutManager
+import android.support.v7.widget.Toolbar
+import android.view.View
 import edu.stts.materialcomponents.R
 import edu.stts.materialcomponents.activity.menu13.Adapter.StaggeredAdapter
 import edu.stts.materialcomponents.utils.Tools
@@ -18,8 +20,12 @@ class StaggeredActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_13_staggered)
+        val toolbar = findViewById<View>(R.id.toolbar2) as Toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Staggered Grid"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        var list: List<ItemObject> = getListItemData()
+        val list: List<ItemObject> = getListItemData()
         rv_stag.setHasFixedSize(true)
         rv_stag.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
         sadapter = StaggeredAdapter(list, this)
@@ -28,6 +34,11 @@ class StaggeredActivity: AppCompatActivity() {
         Tools.setSystemBarColor(this, R.color.grey_1000)
     }
 
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 
     private fun getListItemData(): List<ItemObject> {
         val listViewItems = ArrayList<ItemObject>()
@@ -43,6 +54,12 @@ class StaggeredActivity: AppCompatActivity() {
         listViewItems.add(ItemObject("Mountain", R.drawable.image_27))
         listViewItems.add(ItemObject("City", R.drawable.image_26))
         listViewItems.add(ItemObject("Chair", R.drawable.image_6))
+        listViewItems.add(ItemObject("Female", R.drawable.photo_female_5))
+        listViewItems.add(ItemObject("Plant9", R.drawable.img_plant_9))
+        listViewItems.add(ItemObject("Pinterest", R.drawable.img_social_pinterest))
+        listViewItems.add(ItemObject("Male6", R.drawable.photo_male_6))
+        listViewItems.add(ItemObject("Shopaholic", R.drawable.image_shop_2))
+        listViewItems.add(ItemObject("Brown Shoe", R.drawable.image_shop_5))
 
         return listViewItems
     }
