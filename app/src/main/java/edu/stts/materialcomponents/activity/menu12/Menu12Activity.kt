@@ -3,63 +3,28 @@ package edu.stts.materialcomponents.activity.menu12
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.CheckedTextView
-import android.widget.ListView
+import android.view.View
 import edu.stts.materialcomponents.R
+import kotlinx.android.synthetic.main.activity_menu_2.*
 
 class Menu12Activity: AppCompatActivity() {
-    private var lv: ListView? = null
-    private var modelArrayList: ArrayList<Model>? = null
-    private var customAdapter: CustomAdapter? = null
-    private var btnselect: Button? = null
-    private var btndeselect: Button? = null
-    private var btnnext: Button? = null
-    private val animallist = arrayOf("Singa", "Kucing", "Anjing", "Ikan Pari", "Ikan Cupang", "Paus")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_12_main)
-
-        lv = findViewById(R.id.lv) as ListView
-        btnselect = findViewById(R.id.select) as Button
-        btndeselect = findViewById(R.id.deselect) as Button
-        btnnext = findViewById(R.id.next) as Button
-
-        modelArrayList = getModel(false)
-        customAdapter = CustomAdapter(this, modelArrayList!!)
-        lv!!.adapter = customAdapter
-
-        btnselect!!.setOnClickListener {
-            modelArrayList = getModel(true)
-            customAdapter = CustomAdapter(this@Menu12Activity, modelArrayList!!)
-            CustomAdapter.public_modelArrayList = modelArrayList as ArrayList<Model>
-            lv!!.adapter = customAdapter
-        }
-        btndeselect!!.setOnClickListener {
-            modelArrayList = getModel(false)
-            customAdapter = CustomAdapter(this@Menu12Activity, modelArrayList!!)
-            CustomAdapter.public_modelArrayList = modelArrayList as ArrayList<Model>
-            lv!!.adapter = customAdapter
-        }
-        btnnext!!.setOnClickListener {
-            val intent = Intent(this@Menu12Activity, NextActivity::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_menu_12)
+        init()
     }
 
-    private fun getModel(isSelect: Boolean): ArrayList<Model> {
-        val list = ArrayList<Model>()
-        for (i in 0..3) {
+    private fun init() {
+        button1.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, ChangeColorActivity::class.java)
+            startActivity(i)
+        })
 
-            val model = Model()
-            model.setSelecteds(isSelect)
-            model.setAnimals(animallist[i])
-            list.add(model)
-        }
-        return list
+        button2.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, CheckAll::class.java)
+            startActivity(i)
+        })
     }
-
 
 }

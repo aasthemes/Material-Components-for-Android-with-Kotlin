@@ -14,6 +14,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter>
@@ -26,7 +27,6 @@
                         android:pathPattern="/material-components"/>
             </intent-filter>
         </activity>
-        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckBoxDataAdapter"/>
         <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
@@ -41,7 +41,8 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu12.NextActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.ChangeColorActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckAll"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
