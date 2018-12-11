@@ -7,9 +7,11 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.app.ProgressDialog
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.media.Image
 import android.opengl.Visibility
 import android.os.AsyncTask
+import android.util.Base64
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
@@ -27,7 +29,7 @@ class myAsyProgressBar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_asy_progress_bar)
 
-        val url = URL("http://www.suaraflores.net/wp-content/uploads/2018/04/korup.jpg")
+        val url = URL("https://4.bp.blogspot.com/-GVrZTJH1uoA/WeGTOaEu0ZI/AAAAAAAAgiw/TG32vFlBaSMCQ1vLmT4izkQ_YN5koOrbwCLcBGAs/s400/panderman3.jpg")
 
         myButton.setOnClickListener(){
             MyAsyncTask().execute(url)
@@ -43,6 +45,9 @@ class myAsyProgressBar : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
         }
 
+        val imageBytes = Base64.decode(String(),0)
+        public var myBitmap = BitmapFactory.decodeByteArray(imageBytes, 0, imageBytes.size)
+
         override fun doInBackground(vararg params: URL?): String {
 
             val connect = params[0]?.openConnection() as HttpURLConnection
@@ -53,7 +58,9 @@ class myAsyProgressBar : AppCompatActivity() {
 
             val responseCode: Int = connect.responseCode;
             if (responseCode == 200) {
+
                 result = streamToString(connect.inputStream)
+                myBitmap = BitmapFactory.decodeStream(connect.inputStream)
             }
 
             return result
@@ -66,9 +73,7 @@ class myAsyProgressBar : AppCompatActivity() {
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
             progressBar.visibility = View.GONE
-            //set result in textView
             tv_result.text = result
-            //MyImageView.setImageBitmap(result)
         }
     }
 

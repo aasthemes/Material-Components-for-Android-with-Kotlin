@@ -11,35 +11,35 @@
             android:layout_height="wrap_content">
         <RadioButton
                 android:background="@color/blue_500"
-                android:text="Biru"
+                android:text="@string/Biru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButtonBiru"
                 android:layout_weight="1"/>
         <RadioButton
                 android:background="@color/green_500"
-                android:text="Hijau"
+                android:text="@string/Hijau"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButtonHijau"
                 android:layout_weight="1"/>
         <RadioButton
                 android:background="@color/red_500"
-                android:text="Merah"
+                android:text="@string/Merah"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButtonMerah"
                 android:layout_weight="1"/>
         <RadioButton
                 android:background="@color/yellow_500"
-                android:text="Kuning"
+                android:text="@string/Kuning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/radioButtonKuning"
                 android:layout_weight="1"/>
     </RadioGroup>
     <Button
-            android:text="@string/process"
+            android:text="@string/proses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/myButtonProcess"/>

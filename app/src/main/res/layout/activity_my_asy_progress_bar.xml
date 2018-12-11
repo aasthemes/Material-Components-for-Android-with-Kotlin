@@ -10,11 +10,11 @@
     <TextView
             android:id="@+id/tv_result"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="450dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="172dp"
-            android:text="Data will show !"
+            android:layout_marginTop="20dp"
+            android:text="@string/HarapTunggu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +31,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/myButton"
             android:visibility="gone"
             android:indeterminate="true"/>
     <Button
-            android:text="@string/process"
+            android:text="@string/proses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout_editor_absoluteY="191dp"
@@ -43,20 +43,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_result"
             app:layout_constraintBottom_toBottomOf="parent"
             android:id="@+id/myButton"/>
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/avatar"
-            tools:layout_editor_absoluteY="16dp"
-            tools:layout_editor_absoluteX="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:id="@+id/MyImageView"/>
 
 </android.support.constraint.ConstraintLayout>

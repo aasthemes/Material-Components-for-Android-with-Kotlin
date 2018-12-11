@@ -26,24 +26,19 @@
             android:layout_height="wrap_content"/>
 
     <Button
-            android:text="Splash Screen with Progress Bar"
-            android:id="@+id/buttonmyDialogProgressBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    <Button
             android:text="@string/myStyleProgressBar"
             android:id="@+id/buttonmyStyleProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
     <Button
-            android:text="@string/myAsyncTask"
-            android:id="@+id/buttonmyAsyncTaskProgressBar"
+            android:text="@string/CustomColorProgressBar"
+            android:id="@+id/buttonmyColorProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <Button
-            android:text="Custom Color Progress Bar"
-            android:id="@+id/buttonmyColorProgressBar"
+            android:text="@string/CustomDrawalabeProgressBar"
+            android:id="@+id/buttonmyCustomDrawalableProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 </LinearLayout>

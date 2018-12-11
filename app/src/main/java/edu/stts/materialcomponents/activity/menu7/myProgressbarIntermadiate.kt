@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import edu.stts.materialcomponents.R
+import kotlinx.android.synthetic.main.activity_my_custom_drawlable_progress_bar.*
 import kotlinx.android.synthetic.main.activity_my_progressbar_intermadiate.*
+import kotlin.system.exitProcess
 
 class myProgressbarIntermadiate : AppCompatActivity() {
 
@@ -15,36 +17,41 @@ class myProgressbarIntermadiate : AppCompatActivity() {
 
         // get the references from layout file
         val btnStartProgress = this.button123
-        val progressBar: ProgressBar = this.progressBar123
+        var progress: Int = 0
 
-        // when button is clicked, start the task
-        btnStartProgress.setOnClickListener { v ->
-
-            // task is run on a thread
-            Thread(Runnable {
-                // dummy thread mimicking some operation whose progress cannot be tracked
-
-                // display the indefinite progressbar
-                this@myProgressbarIntermadiate.runOnUiThread(java.lang.Runnable {
-                    progressBar.visibility = View.VISIBLE
-                })
-
-                // performing some dummy time taking operation
-                try {
-                    var i=0;
-                    while(i<Int.MAX_VALUE){
-                        i++
-                    }
-                } catch (e: InterruptedException) {
-                    e.printStackTrace()
+        btnStartProgress.setOnClickListener {
+            try {
+                progressBar123.visibility = View.VISIBLE
+                if(progressBar123.visibility == View.VISIBLE){
+                    setProgressValue(progress)
+                    myTextView.text = "proses: $progress%"
                 }
-
-                // when the task is completed, make progressBar gone
-                this@myProgressbarIntermadiate.runOnUiThread(java.lang.Runnable {
-                    progressBar.visibility = View.GONE
-                })
-            }).start()
+            }catch (e:Exception){
+                toast(e.toString())
+            }
         }
 
     }
+
+    public fun setProgressValue(progress: Int){
+        Thread(Runnable {
+            progressBar123.max = 100
+            this@myProgressbarIntermadiate.runOnUiThread(java.lang.Runnable {
+                progressBar123.visibility = View.VISIBLE
+                if(progressBar123.progress == 100){
+                    progressBar123.visibility = View.INVISIBLE
+                    progressBar123.visibility = View.GONE
+                    toast("Progress Bar was gone")
+                }
+                try {
+                    Thread.sleep(1000)
+                    progressBar123.setProgress(progress)
+                    setProgressValue(progress + 10)
+                }   catch (e : Exception){
+                    toast(e.toString())
+                }
+            })
+        }).start()
+    }
+
 }

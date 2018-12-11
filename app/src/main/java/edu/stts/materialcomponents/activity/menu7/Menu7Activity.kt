@@ -23,23 +23,28 @@ class Menu7Activity: AppCompatActivity() {
             startActivity(i)
         }
 
-        buttonmyDialogProgressBar.setOnClickListener(){
-            val i = Intent(this, myDialogProgressBar::class.java)
+        /*buttonmyDialogProgressBar.setOnClickListener(){
+            val i = Intent(this, mySplashProgressBar::class.java)
             startActivity(i)
-        }
+        }*/
 
         buttonmyStyleProgressBar.setOnClickListener(){
             val i = Intent(this, myStyleProgressBar::class.java)
             startActivity(i)
         }
 
-        buttonmyAsyncTaskProgressBar.setOnClickListener(){
+        /*buttonmyAsyncTaskProgressBar.setOnClickListener(){
             val i = Intent(this, myAsyProgressBar::class.java)
             startActivity(i)
-        }
+        }*/
 
         buttonmyColorProgressBar.setOnClickListener(){
             val i = Intent(this, myColorProgressBar::class.java)
+            startActivity(i)
+        }
+
+        buttonmyCustomDrawalableProgressBar.setOnClickListener(){
+            val i = Intent(this, myCustomDrawlableProgressBar::class.java)
             startActivity(i)
         }
     }
