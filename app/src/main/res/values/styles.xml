@@ -231,6 +231,11 @@
         <item name="listPreferredItemHeightSmall">50dp</item>
     </style>
 
+    <style name="MaterialButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
     <style name="menu_labels_style">
         <item name="android:background">@color/grey_90</item>
         <item name="android:textColor">@color/amber_50</item>
