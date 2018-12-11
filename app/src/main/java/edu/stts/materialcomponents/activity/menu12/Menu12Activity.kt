@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.Button
-import android.widget.ListView
 import edu.stts.materialcomponents.R
 import kotlinx.android.synthetic.main.activity_menu_2.*
 
@@ -18,23 +16,19 @@ class Menu12Activity: AppCompatActivity() {
     }
 
     private fun init() {
+        button1.setOnClickListener(View.OnClickListener {
+            val i = Intent(this, ChangeColorActivity::class.java)
+            startActivity(i)
+        })
 
-        fun onCreate(savedInstanceState: Bundle?) {
+        button2.setOnClickListener(View.OnClickListener {
+        })
 
-            button3.setOnClickListener {
-                val i = Intent(this, CheckboxWithAdapter::class.java)
-                startActivity(i)
-            }
-
-            button1.setOnClickListener(View.OnClickListener {
-                val i = Intent(this, ChangeColorActivity::class.java)
-                startActivity(i)
-            })
-
-            button2.setOnClickListener(View.OnClickListener {
-            })
-
+        button3.setOnClickListener {
+            val i = Intent(this, CheckboxWithAdapter::class.java)
+            startActivity(i)
         }
+
     }
 
 }
