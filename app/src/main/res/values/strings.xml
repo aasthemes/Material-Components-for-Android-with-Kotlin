@@ -24,6 +24,7 @@
     <string name="Kuning">Kuning</string>
     <string name="HarapTunggu">Harap tunggu sebentar!</string>
     <string name="Hijau">Hijau</string>
+    <string name="myVisibilityProgressBar">Visibility Progress Bar</string>
     <string name="SplashScreen">Splash Screen</string>
     <string name="GoogleProgressBar">Google Progress Bar</string>
     <string name="DarkGoogleProgressBar">Dark Google Progress Bar</string>

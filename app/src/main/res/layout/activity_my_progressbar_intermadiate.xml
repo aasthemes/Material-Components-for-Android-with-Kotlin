@@ -13,16 +13,14 @@
             android:text="@string/proses" />
 
     <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
             android:id="@+id/progressBar123"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:visibility="gone"
-            android:indeterminate="true"/>
+            android:padding="10dp"/>
     <TextView
-            android:text="@string/proses"
+            android:text=""
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/myTextView"/>
-
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:text="@string/menu_7"/>
 
     <Button
-            android:text="@string/myIndeterminateProgressBar"
+            android:text="@string/myVisibilityProgressBar"
             android:id="@+id/buttonmyIndeterminateProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

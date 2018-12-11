@@ -17,14 +17,15 @@ class myProgressbarIntermadiate : AppCompatActivity() {
 
         // get the references from layout file
         val btnStartProgress = this.button123
-        var progress: Int = 0
 
+        var progress: Int = 0
+        progressBar123.visibility = View.INVISIBLE
         btnStartProgress.setOnClickListener {
             try {
+                toast("progress bar is visible")
                 progressBar123.visibility = View.VISIBLE
                 if(progressBar123.visibility == View.VISIBLE){
                     setProgressValue(progress)
-                    myTextView.text = "proses: $progress%"
                 }
             }catch (e:Exception){
                 toast(e.toString())
@@ -39,9 +40,11 @@ class myProgressbarIntermadiate : AppCompatActivity() {
             this@myProgressbarIntermadiate.runOnUiThread(java.lang.Runnable {
                 progressBar123.visibility = View.VISIBLE
                 if(progressBar123.progress == 100){
-                    progressBar123.visibility = View.INVISIBLE
                     progressBar123.visibility = View.GONE
                     toast("Progress Bar was gone")
+                }else if(progressBar123.progress > 100){
+                    progressBar123.visibility = View.GONE
+                    finish()
                 }
                 try {
                     Thread.sleep(1000)
