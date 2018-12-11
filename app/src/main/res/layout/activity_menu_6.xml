@@ -10,10 +10,38 @@
             android:id="@+id/welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/menu_6"
+            android:text="@string/menu_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <Button
+                android:text="Slider ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonSlider" android:layout_weight="1"/>
+        <Button
+                android:text="Rounded ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonRounded" android:layout_weight="1"/>
+        <Button
+            android:text="Circular ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/buttonCircular" android:layout_weight="1"/>
+        <Button
+            android:text="Zoom In - Zoom Out ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/buttonZoom" android:layout_weight="1"/>
+        <Button
+            android:text="Button 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

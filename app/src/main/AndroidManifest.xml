@@ -40,6 +40,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu4.OverlapCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6SliderActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>

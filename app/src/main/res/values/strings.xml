@@ -20,7 +20,7 @@
     <string name="menu_3">EditText</string>
     <string name="menu_4">CardView</string>
     <string name="menu_5">Button</string>
-    <string name="menu_6"> Project ImageView</string>
+    <string name="menu_6">ImageView</string>
     <string name="menu_7">ProgressBar</string>
     <string name="menu_8">BottomSheetDialogFragment</string>
     <string name="menu_9">BottomNavigationBar</string>

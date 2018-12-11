@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.techcetro.androidappdev17.">
+    <TextView
+            android:id="@+id/zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ini Halaman Zoom In Zoom Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.171"/>
+    <ImageView
+            android:layout_width="237dp"
+            android:layout_height="361dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteY="138dp"
+            tools:layout_editor_absoluteX="74dp"
+            android:id="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/zoom"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    />
+</RelativeLayout>
