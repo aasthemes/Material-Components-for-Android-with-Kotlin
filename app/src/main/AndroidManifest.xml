@@ -11,7 +11,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
-        <activity android:name="edu.stts.materialcomponents.activity.SplashActivity">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,12 +19,14 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
+
                 <data
-                        android:scheme="http"
                         android:host="stts.edu"
-                        android:pathPattern="/material-components"/>
+                        android:pathPattern="/material-components"
+                        android:scheme="http"/>
             </intent-filter>
         </activity>
         <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
@@ -39,6 +41,15 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu4.TimelineCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.OverlapCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
+        <activity android:name=".activity.menu5.TextButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.ImageButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.TextImageButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.MaterialButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.AtributButtonActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6SliderActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
