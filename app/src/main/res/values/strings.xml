@@ -32,5 +32,8 @@
     <string name="menu_15">TabLayout</string>
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
+    <string name="Checkbox">Checkbox</string>
+    <string name="animal">animal</string>
+    <string name="Select_All">Select All</string>
 
 </resources>
