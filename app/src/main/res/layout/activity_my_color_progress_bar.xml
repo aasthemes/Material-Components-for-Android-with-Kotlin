@@ -44,11 +44,11 @@
             android:layout_height="wrap_content"
             android:id="@+id/myButtonProcess"/>
     <ProgressBar
-            style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/myProgressBar"
             tools:visibility="visible"
             android:max="100"
-            android:progress="1" android:visibility="visible"/>
+            android:progress="0"
+    />
 </LinearLayout>

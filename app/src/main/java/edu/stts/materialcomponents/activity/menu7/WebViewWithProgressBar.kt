@@ -15,10 +15,13 @@ import android.os.Build
 import android.view.View
 import android.content.Context
 import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import android.support.v7.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_web_view_with_progress_bar.*
+import kotlinx.android.synthetic.main.activity_my_color_progress_bar.*
 
 class WebViewWithProgressBar : AppCompatActivity() {
 
@@ -77,6 +80,7 @@ class WebViewWithProgressBar : AppCompatActivity() {
         web_view.webViewClient = object: WebViewClient(){
             override fun onPageStarted(view: WebView, url: String, favicon: Bitmap?) {
                 toast("Sedang diproses...")
+                progress_bar.visibility = View.VISIBLE
                 button_back.isEnabled = web_view.canGoBack()
                 button_forward.isEnabled = web_view.canGoForward()
             }
@@ -84,6 +88,7 @@ class WebViewWithProgressBar : AppCompatActivity() {
             override fun onPageFinished(view: WebView, url: String) {
                 toast("Halaman berhasil ditampilkan: ${view.title}")
                 progress_bar.progress = 0
+                progress_bar.visibility = View.GONE
                 button_back.isEnabled = web_view.canGoBack()
                 button_forward.isEnabled = web_view.canGoForward()
             }
@@ -99,6 +104,8 @@ class WebViewWithProgressBar : AppCompatActivity() {
             var temp: String = ""
             temp = editTextUrl.text.toString()
             url = "https://$temp"
+            val color = Color.GREEN
+            progress_bar.indeterminateDrawable.setColorFilter(color, PorterDuff.Mode.SRC_IN)
             web_view.loadUrl(url)
         }
 
