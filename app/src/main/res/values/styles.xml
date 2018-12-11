@@ -230,4 +230,9 @@
         <item name="android:textSize">25sp</item>
         <item name="listPreferredItemHeightSmall">50dp</item>
     </style>
+
+    <style name="MaterialButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
 </resources>
