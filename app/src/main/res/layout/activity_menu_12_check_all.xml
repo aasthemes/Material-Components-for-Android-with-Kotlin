@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_check_all_uncheck_all"
+              android:layout_marginTop="50dp"
+              android:textStyle="bold"
+              android:textSize="24sp"
+              android:textColor="@color/indigo_900"
+              android:layout_gravity="center_horizontal"
+    />
+
+    <CheckBox android:id="@+id/checkbox_all"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Select All"
+              android:onClick="onCheckboxClicked"
+    />
+
+    <CheckBox android:id="@+id/checkbox_1_all"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_1"
+              android:onClick="onCheckboxClicked"
+              android:layout_marginLeft="20sp"
+    />
+
+    <CheckBox android:id="@+id/checkbox_2_all"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_2"
+              android:onClick="onCheckboxClicked"
+              android:layout_marginLeft="20sp"
+    />
+
+    <CheckBox android:id="@+id/checkbox_3_all"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_3"
+              android:onClick="onCheckboxClicked"
+              android:layout_marginLeft="20sp"
+    />
+
+    <CheckBox android:id="@+id/checkbox_4_all"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/checkbox_4"
+              android:onClick="onCheckboxClicked"
+              android:layout_marginLeft="20sp"
+    />
+
+</LinearLayout>

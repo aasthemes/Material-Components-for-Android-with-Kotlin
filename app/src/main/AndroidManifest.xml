@@ -84,6 +84,10 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.NextActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckboxWithAdapter"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.ChangeColorActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckAll"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.BasicActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.PokemonActivity"/>

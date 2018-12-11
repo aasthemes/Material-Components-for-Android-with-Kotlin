@@ -55,5 +55,20 @@
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
     <string name="menu_13_basic">Basic</string>
+    <string name="Checkbox">Checkbox</string>
+    <string name="animal">animal</string>
+    <string name="Select_All">Select All</string>
+
+    <string name="checkbox_0">CheckBox Color</string>
+    <string name="checkbox_1">CheckBox1</string>
+    <string name="checkbox_2">CheckBox2</string>
+    <string name="checkbox_3">CheckBox3</string>
+    <string name="checkbox_4">CheckBox4</string>
+    <string name="change_color">Change Color</string>
+    <string name="checkbox_red">Red</string>
+    <string name="checkbox_green">Green</string>
+    <string name="checkbox_blue">Blue</string>
+    <string name="checkbox_change_color">Change Color</string>
+    <string name="checkbox_check_all_uncheck_all">Check All / Uncheck All</string>
 
 </resources>
