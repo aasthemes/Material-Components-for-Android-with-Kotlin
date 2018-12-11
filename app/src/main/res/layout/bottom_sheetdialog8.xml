@@ -76,5 +76,6 @@
                 android:text="Download"
                 android:textColor="#737373"
                 android:textSize="16sp" />
+
     </LinearLayout>
 </LinearLayout>
