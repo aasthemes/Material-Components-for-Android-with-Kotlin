@@ -54,7 +54,6 @@ class myCustomDrawlableProgressBar : AppCompatActivity() {
                 myProgress.visibility = View.VISIBLE
                 if(myProgress.progress == 100){
                     myProgress.visibility = View.GONE
-                    finish()
                     exitProcess(1)
                 }
                 try {

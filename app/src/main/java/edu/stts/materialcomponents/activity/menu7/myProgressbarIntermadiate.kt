@@ -7,6 +7,7 @@ import android.widget.ProgressBar
 import edu.stts.materialcomponents.R
 import kotlinx.android.synthetic.main.activity_my_custom_drawlable_progress_bar.*
 import kotlinx.android.synthetic.main.activity_my_progressbar_intermadiate.*
+import kotlin.concurrent.thread
 import kotlin.system.exitProcess
 
 class myProgressbarIntermadiate : AppCompatActivity() {
@@ -42,7 +43,11 @@ class myProgressbarIntermadiate : AppCompatActivity() {
                 if(progressBar123.progress == 100){
                     progressBar123.visibility = View.GONE
                     toast("Progress Bar was gone")
-                    finish()
+                    killThread()
+                    exitProcess(1)
+                    //Thread.currentThread().stop()
+
+                    //finish()
                 }
                 try {
                     Thread.sleep(1000)
@@ -53,6 +58,14 @@ class myProgressbarIntermadiate : AppCompatActivity() {
                 }
             })
         }).start()
+    }
+
+    public fun killThread(){
+        Thread(Runnable {
+            this@myProgressbarIntermadiate.runOnUiThread(java.lang.Runnable {
+                Thread.currentThread().interrupt()
+            })
+        }).interrupt()
     }
 
 }
