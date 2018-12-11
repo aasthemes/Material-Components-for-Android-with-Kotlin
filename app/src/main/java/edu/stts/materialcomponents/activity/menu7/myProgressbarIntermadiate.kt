@@ -42,8 +42,6 @@ class myProgressbarIntermadiate : AppCompatActivity() {
                 if(progressBar123.progress == 100){
                     progressBar123.visibility = View.GONE
                     toast("Progress Bar was gone")
-                }else if(progressBar123.progress > 100){
-                    progressBar123.visibility = View.GONE
                     finish()
                 }
                 try {
