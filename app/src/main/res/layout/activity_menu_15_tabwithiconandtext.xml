@@ -5,7 +5,7 @@
      android:layout_height="match_parent"
      xmlns:app="http://schemas.android.com/apk/res-auto"
      xmlns:tools="http://schemas.android.com/tools"
-     tools:context=".activity.menu15.TabWithIconAndText.MainActivity">
+     tools:context=".activity.menu15.TabWithIconAndText.TabWithIconAndTextActivity">
 
     <android.support.v4.view.ViewPager
 
