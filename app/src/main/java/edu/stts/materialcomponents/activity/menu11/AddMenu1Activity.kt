@@ -6,6 +6,7 @@ import edu.stts.materialcomponents.R
 import edu.stts.materialcomponents.utils.Tools
 import kotlinx.android.synthetic.main.activity_menu_11_addmenu1.*
 
+
 class AddMenu1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +25,4 @@ class AddMenu1Activity : AppCompatActivity() {
         val actionBar = supportActionBar
         actionBar?.title = ""
     }
-
 }
