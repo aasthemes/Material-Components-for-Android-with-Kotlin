@@ -3,6 +3,8 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="edu.stts.materialcomponents">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
             android:allowBackup="false"
             android:icon="@mipmap/ic_launcher"
@@ -34,8 +36,7 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
-        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6SliderActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>\
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>
