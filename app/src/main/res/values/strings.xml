@@ -30,7 +30,13 @@
     <string name="menu_13">RecyclerView</string>
     <string name="menu_14">Menu</string>
     <string name="menu_15">TabLayout</string>
-    <string name="menu_16">WebView</string>
+    <string name="menu_16">DrawerLayout</string>
     <string name="menu_17">FAB</string>
+
+    <!--keperluan kelompok 16-->
+    <string name="nav_header_title">Team16</string>
+    <string name="nav_header_subtitle">Hafid Hakim | Yohanes Mac M</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Profile</string>
 
 </resources>
