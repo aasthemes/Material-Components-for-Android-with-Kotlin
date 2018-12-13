@@ -5,7 +5,8 @@
      android:layout_width="match_parent"
      android:layout_height="match_parent"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".activity.menu15.TabWithIcon.TabWithIconActivity">
+        tools:context=".activity.menu15.TabWithIcon.TabWithIconActivity"
+        android:fitsSystemWindows="true"   >
 
     <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"

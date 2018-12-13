@@ -4,7 +4,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".activity.menu15.TabAndScrolling.TabAndScrollingActivity">
+        tools:context=".activity.menu15.TabAndScrolling.TabAndScrollingActivity"
+        android:fitsSystemWindows="true">
     <android.support.v4.view.ViewPager
 
             android:id="@+id/viewpager_main"
@@ -15,7 +16,8 @@
                 android:id="@+id/tabs_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top"/>
+                android:layout_gravity="top"
+        />
 
     </android.support.v4.view.ViewPager>
 </android.support.constraint.ConstraintLayout>
