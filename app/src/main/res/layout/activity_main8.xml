@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/btn_alertDialog"
+
+		android:orientation="vertical">
+
+
+
+	<TextView
+			android:text="DIALOG"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="40dp"
+			android:textSize="30dp"/>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:text="Alert Dialog :"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:textSize="15dp"
+				android:layout_marginTop="10dp"/>
+		<Button
+				android:text="Show"
+				android:id="@+id/btn_alert"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="88dp"
+				android:layout_marginTop="10dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:text="Time Picker Dialog :"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:textSize="15dp"
+				android:layout_marginTop="10dp"/>
+		<Button
+				android:text="Show"
+				android:id="@+id/btn_time"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="clickTimePicker"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="10dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:text="Date Picker Dialog :"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:textSize="15dp"
+				android:layout_marginTop="10dp"/>
+		<Button
+				android:text="Show"
+				android:id="@+id/btn_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="clickDatePicker"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="44dp"
+				android:layout_marginTop="10dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:text="Single Choice Dialog :"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:textSize="15dp"
+				android:layout_marginTop="10dp"/>
+		<Button
+				android:text="Show"
+				android:id="@+id/btn_singleChoice"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="clickSingleChoicePicker"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="31dp"
+				android:layout_marginTop="10dp"/>
+		<TextView
+				android:id="@+id/txtView"
+				android:text=""
+				android:textSize="30sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+		<TextView
+				android:text="Multi Choice Dialog :"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dp"
+				android:textSize="15dp"
+				android:layout_marginTop="10dp"/>
+		<Button
+				android:text="Show"
+				android:id="@+id/btn_multiChoice"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:onClick="clickMultiChoicePicker"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="35dp"
+				android:layout_marginTop="10dp"/>
+		<TextView
+				android:id="@+id/txtViewMulti"
+				android:text=""
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<!--<android.support.constraint.ConstraintLayout-->
+
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:padding="10dp">-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/textMessage"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:text="This is the BottomSheetDialog, you can use this instead of normal Dialogs."-->
+	<!--android:textColor="#000"-->
+	<!--android:textSize="16sp"-->
+	<!--app:layout_constraintTop_toTopOf="parent" />-->
+
+	<!--<Button-->
+	<!--android:id="@+id/buttonSubmit"-->
+	<!--style="@style/Widget.AppCompat.Button.Borderless"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_margin="5dp"-->
+	<!--android:text="OKAY"-->
+	<!--app:layout_constraintBottom_toBottomOf="parent"-->
+	<!--app:layout_constraintEnd_toEndOf="parent"-->
+	<!--app:layout_constraintStart_toStartOf="parent"-->
+	<!--app:layout_constraintTop_toBottomOf="@+id/textMessage" />-->
+	<!--</android.support.constraint.ConstraintLayout>-->
+	<!--<LinearLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_marginTop="10dp">-->
+	<!--<TextView-->
+	<!--android:text="ProgressBar Dialog :"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:layout_marginLeft="15dp"-->
+	<!--android:textSize="15dp"-->
+	<!--android:layout_marginTop="10dp"/>-->
+	<!--<Button-->
+	<!--android:text="Show"-->
+	<!--android:id="@+id/button"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:onClick="clickProgress"-->
+	<!--android:layout_marginRight="10dp"-->
+	<!--android:layout_marginLeft="38dp"-->
+	<!--android:layout_marginTop="10dp"/>-->
+	<!--<ProgressBar android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="16dp"/>-->
+	<!--</LinearLayout>-->
+</LinearLayout>
