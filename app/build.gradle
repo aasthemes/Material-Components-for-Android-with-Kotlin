@@ -65,4 +65,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.gjiazhe:scrollparallaximageview:1.0'
 }

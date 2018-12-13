@@ -5,9 +5,11 @@ import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.widget.Toast
 import edu.stts.materialcomponents.R
 import kotlinx.android.synthetic.main.activity_menu_6.*
 import com.github.chrisbanes.photoview.PhotoView
+import kotlinx.android.synthetic.main.activity_menu_6_click_view.*
 
 
 public class Menu6Activity: AppCompatActivity() {
@@ -39,9 +41,6 @@ public class Menu6Activity: AppCompatActivity() {
             viewPager.adapter = adapter
         }
 
-        buttonRounded.setOnClickListener{
-            setContentView(R.layout.activity_menu_6_rounded_view)
-        }
 
         buttonCircular.setOnClickListener{
             setContentView(R.layout.activity_menu_6_circular_view)
@@ -53,6 +52,21 @@ public class Menu6Activity: AppCompatActivity() {
 
             val photoView = findViewById<View>(R.id.photo_view) as PhotoView
             photoView.setImageResource(R.drawable.logo)
+        }
+
+        buttonParallax.setOnClickListener{
+            setContentView(R.layout.activity_menu_6_parallax_view)
+
+            val photoView = findViewById<View>(R.id.photo_view) as PhotoView
+            photoView.setImageResource(R.drawable.logo)
+        }
+
+        buttonClick.setOnClickListener{
+            setContentView(R.layout.activity_menu_6_click_view)
+
+            click_image.setOnClickListener{
+                Toast.makeText(this,"Ini hasil dari click gambar !", Toast.LENGTH_LONG).show()
+            }
         }
 
     }
