@@ -13,14 +13,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
-<<<<<<< HEAD
 
         <meta-data
                 android:name="android.webkit.WebView.MetricsOptOut"
                 android:value="true"/>
 
-=======
->>>>>>> team11
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -39,7 +36,7 @@
                         android:scheme="http"/>
             </intent-filter>
         </activity>
-<<<<<<< HEAD
+
         <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
@@ -110,7 +107,7 @@
         </activity>
         <activity android:name=".activity.menu2.ColorButtonActivity">
         </activity>
-        <activity android:name=".activity.menu2.StyleButtonActivity">
+        <activity android:name=".activity.menu2.StyleButtonActivity"/>
         <activity android:name=".activity.menu11.AddMenu1Activity">
         </activity>
         <activity android:name=".activity.menu11.AddMenu2Activity">
