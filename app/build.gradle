@@ -25,8 +25,9 @@ android {
 dependencies {
     final SUPPORT_LIBRARY_VERSION = '27.1.1'
 
-    // App Dependencies
+    compile 'com.google.android:flexbox:0.3.2'
 
+    // App Dependencies
     // google support library ---------------------------------------------------------------------
     implementation "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
     implementation "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
@@ -44,7 +45,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-places:16.0.0'
 
     // google gson --------------------------------------------------------------------------------
-    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
     // third party dependencies -------------------------------------------------------------------
     implementation 'com.balysv:material-ripple:1.0.2'                  // ripple effect
@@ -55,12 +56,27 @@ dependencies {
     implementation 'com.hootsuite.android:nachos:1.1.1'                // material chips
     implementation 'com.google.android:flexbox:0.3.2'                  // google flexible box
     implementation 'com.crystal:crystalrangeseekbar:1.1.3'             // range seek bar
+    implementation 'com.getbase:floatingactionbutton:1.10.1'           // fab with popup
+    implementation 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar' // fab with loading stroke
+
+
+    // bottom navigation
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support:design:27.0.1'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.gjiazhe:scrollparallaximageview:1.0'
 }

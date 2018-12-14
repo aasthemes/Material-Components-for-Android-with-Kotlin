@@ -3,6 +3,8 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="edu.stts.materialcomponents">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="false"
             android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,12 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:replace="android:allowBackup">
-        <activity android:name="edu.stts.materialcomponents.activity.SplashActivity">
+
+        <meta-data
+                android:name="android.webkit.WebView.MetricsOptOut"
+                android:value="true"/>
+
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,33 +26,103 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
+
                 <data
-                        android:scheme="http"
                         android:host="stts.edu"
-                        android:pathPattern="/material-components"/>
+                        android:pathPattern="/material-components"
+                        android:scheme="http"/>
             </intent-filter>
         </activity>
+
         <activity android:name="edu.stts.materialcomponents.activity.MainActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu1.Menu1Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu2.Menu2Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu2.BasicButtonActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu3.Menu3Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu4.Menu4Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.BasicCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.BasicColorCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.BasicBgCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.TimelineCardViewActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu4.OverlapCardViewActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu5.Menu5Activity"/>
+        <activity android:name=".activity.menu5.TextButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.ImageButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.TextImageButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.MaterialButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu5.AtributButtonActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu6.Menu6Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu7.Menu7Activity"/>
+        <activity android:name=".activity.menu7.WebViewWithProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myProgressbarIntermadiate">
+        </activity>
+        <activity android:name=".activity.menu7.myDialogProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myStyleProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myAsyProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myColorProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.mySplashProgressBar">
+        </activity>
+        <activity android:name=".myDrawlableProgressBar">
+        </activity>
+        <activity android:name=".activity.menu7.myCustomDrawlableProgressBar">
+        </activity>
         <activity android:name="edu.stts.materialcomponents.activity.menu8.Menu8Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu9.Menu9Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu10.Menu10Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu11.Menu11Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu12.Menu12Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.NextActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckboxWithAdapter"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.ChangeColorActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu12.CheckAll"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu13.Menu13Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.BasicActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.PokemonActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.StaggeredActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu13.SwipeActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabBasic.TabBasicActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabAndScrolling.TabAndScrollingActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIcon.TabWithIconActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithText.TabWithTextActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIconAndText.TabWithIconAndTextActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu17.Menu17Activity"/>
+        <activity android:name=".activity.menu17.BasicWithCustomPosition"/>
+        <activity android:name=".activity.menu17.PopupMenu"/>
+        <activity android:name=".activity.menu17.StrokeLoading"/>
+        <activity android:name=".activity.menu17.PopupLabel"/>
+        <activity android:name=".activity.menu17.BackgroundColor"/>
+        <activity android:name=".activity.menu2.SizeButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu2.TypefaceButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu2.ColorButtonActivity">
+        </activity>
+        <activity android:name=".activity.menu2.StyleButtonActivity"/>
+        <activity android:name=".activity.menu11.AddMenu1Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu2Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu3Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu4Activity">
+        </activity>
+        <activity android:name=".activity.menu11.AddMenu5Activity">
+        </activity>
     </application>
 
 </manifest>
