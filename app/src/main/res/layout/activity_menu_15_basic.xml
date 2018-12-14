@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--ERROR atribut style, dikomen oleh team master-->
+<!--<android.support.constraint.ConstraintLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--tools:context=".activity.menu15.TabBasic.TabBasicActivity"-->
+        <!--style="@style/TabLayoutBasic"-->
+        <!--android:fitsSystemWindows="true">-->
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".activity.menu15.TabBasic.TabBasicActivity"
-        style="@style/TabLayoutBasic"
         android:fitsSystemWindows="true">
 
     <android.support.v4.view.ViewPager
