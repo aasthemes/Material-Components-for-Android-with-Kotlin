@@ -22,13 +22,13 @@
             android:orientation="vertical">
 
         <Button
+                android:text="Click ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/buttonClick" android:layout_weight="1"/>
+        <Button
                 android:text="Slider ImageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/buttonSlider" android:layout_weight="1"/>
-        <Button
-                android:text="Rounded ImageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/buttonRounded" android:layout_weight="1"/>
         <Button
             android:text="Circular ImageView"
             android:layout_width="match_parent"
@@ -38,9 +38,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/buttonZoom" android:layout_weight="1"/>
         <Button
-            android:text="Button 1"
+            android:text="Parallax ImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/button5" android:layout_weight="1"/>
+            android:layout_height="wrap_content" android:id="@+id/buttonParallax" android:layout_weight="1"/>
 
     </LinearLayout>
 
