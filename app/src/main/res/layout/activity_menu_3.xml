@@ -83,25 +83,26 @@
             android:ems="10"/>
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:counterEnabled="true"
-            app:counterMaxLength="10"
-            app:counterTextAppearance="counterText"
-            app:counterOverflowTextAppearance="counterOverride">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Adding Character Counting"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Username"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:ems="10"/>
-        </android.support.design.widget.TextInputLayout>
+        <!--ERROR, dikomen oleh team master-->
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:counterEnabled="true"-->
+            <!--app:counterMaxLength="10"-->
+            <!--app:counterTextAppearance="counterText"-->
+            <!--app:counterOverflowTextAppearance="counterOverride">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="Adding Character Counting"/>-->
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="Username"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:ems="10"/>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
 
 
     </LinearLayout>

@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import edu.stts.materialcomponents.R
-import kotlinx.android.synthetic.main.activity_menu_2.*
+import kotlinx.android.synthetic.main.activity_menu_12.*
 
 class Menu12Activity: AppCompatActivity() {
 
