@@ -94,6 +94,11 @@
         <activity android:name="edu.stts.materialcomponents.activity.menu13.SwipeActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu14.Menu14Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu15.Menu15Activity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabBasic.TabBasicActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabAndScrolling.TabAndScrollingActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIcon.TabWithIconActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithText.TabWithTextActivity"/>
+        <activity android:name="edu.stts.materialcomponents.activity.menu15.TabWithIconAndText.TabWithIconAndTextActivity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu16.Menu16Activity"/>
         <activity android:name="edu.stts.materialcomponents.activity.menu17.Menu17Activity"/>
         <activity android:name=".activity.menu17.BasicWithCustomPosition"/>
