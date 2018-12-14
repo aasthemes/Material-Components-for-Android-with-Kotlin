@@ -54,6 +54,7 @@
     <string name="menu_15">TabLayout</string>
     <string name="menu_16">WebView</string>
     <string name="menu_17">FAB</string>
+    
     <string name="menu_13_basic">Basic</string>
     <string name="Checkbox">Checkbox</string>
     <string name="animal">animal</string>
@@ -70,5 +71,10 @@
     <string name="checkbox_blue">Blue</string>
     <string name="checkbox_change_color">Change Color</string>
     <string name="checkbox_check_all_uncheck_all">Check All / Uncheck All</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_menuicon">MENU</string>
 
 </resources>
